@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="25">
+<org.eventb.core.poFile org.eventb.core.poStamp="27">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="19">
 <org.eventb.core.poIdentifier name="Bottom_Floor" org.eventb.core.type="ℤ"/>
 <org.eventb.core.poIdentifier name="Top_Floor" org.eventb.core.type="ℤ"/>
