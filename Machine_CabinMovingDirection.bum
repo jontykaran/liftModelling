@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;ch.ethz.eventb.qualprob.qpConfig" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="'" org.eventb.core.assignment="direction ≔ Up" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="(" org.eventb.core.target="Context_CabinMovingDirection"/>
+<org.eventb.core.refinesMachine name=")" org.eventb.core.target="Machine_floor"/>
+<org.eventb.core.seesContext name="*" org.eventb.core.target="Context_CabinFloor"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="+" org.eventb.core.identifier="floor"/>
+<org.eventb.core.variable ch.ethz.eventb.decomposition.nature="1" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="," org.eventb.core.identifier="direction"/>
+<org.eventb.core.invariant name="-" org.eventb.core.label="inv1" org.eventb.core.predicate="direction ∈ Direction"/>
+<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="." org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MoveUp">
+<org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveUp"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="direction = Up"/>
+</org.eventb.core.event>
+<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MoveDown">
+<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="direction = Down"/>
+<org.eventb.core.refinesEvent name="(" org.eventb.core.target="MoveDown"/>
+</org.eventb.core.event>
+<org.eventb.core.event ch.ethz.eventb.decomposition.external="true" ch.ethz.eventb.qualprob.probabilistic="false" name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MoveLeft">
+<org.eventb.core.action name="'" org.eventb.core.assignment="direction ≔ Left" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="floor = Top_Floor ∨ floor = Bottom_Floor"/>
+<org.eventb.core.parameter name=")" org.eventb.core.identifier="Left"/>
+</org.eventb.core.event>
+<org.eventb.core.event ch.ethz.eventb.decomposition.external="true" ch.ethz.eventb.qualprob.probabilistic="false" name="1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="evt1"/>
+</org.eventb.core.machineFile>
