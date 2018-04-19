@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;ch.ethz.eventb.qualprob.qpConfig">
+<org.eventb.core.scEvent ch.ethz.eventb.qualprob.probabilistic="false" name="'" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/CourseWork/Machine_floor.bum|org.eventb.core.machineFile#Machine_floor|org.eventb.core.event#'"/>
+</org.eventb.core.scMachineFile>
