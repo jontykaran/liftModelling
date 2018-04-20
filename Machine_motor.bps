@@ -1,21 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-    <org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DirectionChangeUp/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DirectionChangeUp/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DirectionChangeDown/grd3/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DirectionChangeDown/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DirectionChangeDown/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorWinding/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorWinding/grd2/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorWinding/grd3/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorWinding/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorWinding/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorUnwinding/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorUnwinding/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorUnwinding/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorStops/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorStops/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorStops/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="inv6/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DirectionChangeUp/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DirectionChangeUp/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DirectionChangeUp/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DirectionChangeDown/grd3/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DirectionChangeDown/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DirectionChangeDown/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DirectionChangeDown/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsUp/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsUp/grd2/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsUp/grd3/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsUp/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsUp/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsUp/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsDown/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsDown/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsDown/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsDown/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorStops/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorStops/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorStops/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorStops/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveLeft/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveLeft/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveLeft/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveRight/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveRight/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveRight/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsLeft/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="17" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsLeft/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="17" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsLeft/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="17" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsLeft/direction/EQL" org.eventb.core.confidence="0" org.eventb.core.poStamp="17" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragRight/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="18" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragRight/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="18" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragRight/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="18" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragRight/direction/EQL" org.eventb.core.confidence="0" org.eventb.core.poStamp="18" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="2">
-    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
         <org.eventb.core.poIdentifier name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+        <org.eventb.core.poIdentifier name="DragDown" org.eventb.core.type="Motor"/>
+        <org.eventb.core.poIdentifier name="DragLeft" org.eventb.core.type="Motor"/>
+        <org.eventb.core.poIdentifier name="DragRight" org.eventb.core.type="Motor"/>
+        <org.eventb.core.poIdentifier name="DragUp" org.eventb.core.type="Motor"/>
+        <org.eventb.core.poIdentifier name="Started" org.eventb.core.type="Motor"/>
         <org.eventb.core.poIdentifier name="Stopped" org.eventb.core.type="Motor"/>
-        <org.eventb.core.poIdentifier name="Unwinding" org.eventb.core.type="Motor"/>
-        <org.eventb.core.poIdentifier name="Winding" org.eventb.core.type="Motor"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/CourseWork/Context_CabinMotor.bpo|org.eventb.core.poFile#Context_CabinMotor|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
-        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})" org.eventb.core.source="/CourseWork/Context_CabinMotor.buc|org.eventb.core.contextFile#Context_CabinMotor|org.eventb.core.axiom#+"/>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/CourseWork/Context_CabinMotor.bpo|org.eventb.core.poFile#Context_CabinMotor|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})" org.eventb.core.source="/CourseWork/Context_CabinMotor.buc|org.eventb.core.contextFile#Context_CabinMotor|org.eventb.core.axiom#+"/>
     </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>
