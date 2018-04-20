@@ -1,0 +1,1514 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p14" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="motor'" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Unwinding">
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor'=Winding⇒Up=Up"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Unwinding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="motor'" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Up=Down"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Unwinding">
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Left=Right"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Left"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Right"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor'=Unwinding⇒Up=Down"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Down=Left"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Unwinding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="motor'=Unwinding⇒⊥"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Right"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Direction={Up,Down,Left,Right}"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬motor'=Unwinding"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MoveLeft/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p4">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'">
+                                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
+                                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p20"/>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Up=Down"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Unwinding">
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="motor=Winding⇒direction=Up">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor=Winding⇒Left=Up"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Left=Right"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Left"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Right"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="motor∈Motor"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Down=Left"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="motor=Winding⇒⊥"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Unwinding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤⇒direction=Up">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬motor=Winding"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="direction=Up">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Right"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Direction={Up,Down,Left,Right}"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MoveLeft/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'">
+                                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
+                                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p20"/>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Up=Down"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Unwinding">
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬motor=Unwinding"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤⇒direction=Down">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Left=Right"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="motor=Unwinding⇒⊥"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Left"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Right"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="motor∈Motor"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor=Unwinding⇒Left=Down"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Down=Left"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="motor=Unwinding⇒direction=Down">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Unwinding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="direction=Down">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Right"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Direction={Up,Down,Left,Right}"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MoveRight/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'">
+                                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
+                                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p20"/>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Up=Down"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Unwinding">
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="motor=Winding⇒direction=Up">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Left=Right"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Left"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Right"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="motor∈Motor"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Down=Left"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="motor=Winding⇒⊥"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Unwinding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤⇒direction=Up">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor=Winding⇒Right=Up"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬motor=Winding"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="direction=Up">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Right"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Direction={Up,Down,Left,Right}"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MoveRight/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p7">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p15" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'">
+                                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p19"/>
+                                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p20"/>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Up=Down"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Unwinding">
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬motor=Unwinding"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤⇒direction=Down">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Left=Right"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="motor=Unwinding⇒⊥"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Left"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Right"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="motor∈Motor"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Down=Left"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="motor=Unwinding⇒direction=Down">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Unwinding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor=Unwinding⇒Right=Down"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="direction=Down">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Right"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Direction={Up,Down,Left,Right}"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DirectionChangeUp/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="p16" org.eventb.core.prInfHyps="p15"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p19" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Unwinding">
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="floor≠Top_Floor">
+            <org.eventb.core.prIdent name="Top_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="motor=Unwinding⇒direction=Down">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Unwinding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="motor=Unwinding⇒⊤">
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬floor=Top_Floor">
+            <org.eventb.core.prIdent name="Top_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="direction=Down">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor=Winding⇒Up=Up"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DirectionChangeUp/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="p17" org.eventb.core.prInfHyps="p16"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p21">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p22"/>
+                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p23"/>
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with motor=Stopped" org.eventb.core.prGoal="p21" org.eventb.core.prHyps="p3">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p24">
+                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p24" org.eventb.core.prHyps="p14"/>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="motor=Unwinding⇒⊥"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Left"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬Stopped=Unwinding"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="motor=Stopped"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Unwinding=Stopped"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="direction=Down">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor=Unwinding⇒Up=Down"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Direction={Up,Down,Left,Right}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Down"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Unwinding"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬motor=Unwinding"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Left=Right"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Left"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Up=Right"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="motor∈Motor"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="floor≠Top_Floor">
+            <org.eventb.core.prIdent name="Top_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Winding=Stopped"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="motor=Unwinding⇒direction=Down">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="motor=Unwinding⇒⊤"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬floor=Top_Floor">
+            <org.eventb.core.prIdent name="Top_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Down=Right"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DirectionChangeDown/grd3/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10,p11,p12"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p9,p10,p11,p12"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p13" org.eventb.core.prHyps="p15" org.eventb.core.prInfHyps="p14"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p14"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p18"/>
+                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p19"/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Winding=Unwinding">
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="motor=Winding⇒direction=Up">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="motor∈Motor">
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Stopped">
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}">
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Unwinding=Stopped">
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="floor≠Bottom_Floor">
+            <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬floor=Bottom_Floor">
+            <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})">
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="direction=Up">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="motor=Winding⇒⊤">
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DirectionChangeDown/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p18">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="p17" org.eventb.core.prInfHyps="p16"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p18" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p21">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p19" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p20"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p22"/>
+                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p23"/>
+                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with motor=Stopped" org.eventb.core.prGoal="p21" org.eventb.core.prHyps="p3">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p24">
+                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p24" org.eventb.core.prHyps="p13"/>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="motor=Winding⇒direction=Up">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Left"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="motor=Winding⇒⊥"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬Stopped=Winding"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="motor=Stopped"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Unwinding=Stopped"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬floor=Bottom_Floor">
+            <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Direction={Up,Down,Left,Right}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Down"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Unwinding"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Left=Right"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Left"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Up=Right"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="motor∈Motor"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor=Winding⇒Down=Up"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Winding=Stopped"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="floor≠Bottom_Floor">
+            <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="direction=Up">
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬motor=Winding"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="motor=Winding⇒⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Down=Right"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DirectionChangeDown/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="p16" org.eventb.core.prInfHyps="p15"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p19">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p17" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p19" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Unwinding">
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="motor=Winding⇒direction=Up">
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor=Unwinding⇒Down=Down"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Unwinding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="floor≠Bottom_Floor">
+            <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬floor=Bottom_Floor">
+            <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="direction=Up">
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="motor=Winding⇒⊤">
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MotorUnwinding/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p11">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="p16" org.eventb.core.prInfHyps="p15"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p20">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p20" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Unwinding"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Stopped"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="motor=Unwinding⇒direction=Down">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Unwinding=Stopped"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊥⇒direction=Up"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="motor=Unwinding⇒⊤">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="floor≠Bottom_Floor">
+            <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="direction=Down">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬floor=Bottom_Floor">
+            <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Unwinding=Winding⇒direction=Up"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MotorUnwinding/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="p1" org.eventb.core.prInfHyps="p16"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p17" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p20">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p18" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p19"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p20" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Unwinding">
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Winding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="motor=Unwinding⇒direction=Down">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬Unwinding=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="motor=Unwinding⇒⊤">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="floor≠Bottom_Floor">
+            <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Unwinding=Unwinding⇒direction=Down"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="direction=Down"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬floor=Bottom_Floor">
+            <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="Unwinding=Unwinding⇒⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MotorStops/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p15"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p16"/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Unwinding">
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="motor∈Motor"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Stopped">
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor≠Stopped"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}">
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Unwinding=Stopped">
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})">
+            <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬motor=Stopped"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MotorStops/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p12">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p17" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Stopped=Winding⇒direction=Up"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Unwinding"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Stopped"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="motor≠Stopped">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Unwinding=Stopped"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊥⇒direction=Up"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬motor=Stopped">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MotorStops/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Direction,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{Winding},{Unwinding},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13"/>
+                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p13">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p17">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p17" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Unwinding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Winding" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Winding=Unwinding"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊥⇒direction=Down"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬Winding=Stopped"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="motor≠Stopped">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={Winding,Unwinding,Stopped}"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Unwinding=Stopped"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Motor,{Winding},{Unwinding},{Stopped})"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Stopped=Unwinding⇒direction=Down"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬motor=Stopped">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>
