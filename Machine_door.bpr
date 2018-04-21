@@ -1,0 +1,2132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="Door,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27,p28,p29,p30"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p27,p28,p29,p30"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p29,p26">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p31">
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p31" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32">
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p32" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragDown=DragLeft"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragDown=Started"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬Open=Closed"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="¬Open=Half"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragLeft=DragRight"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragLeft=Stopped"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="⊥⇒⊥"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DragUp=DragLeft"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragUp=Stopped"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DragRight=Started"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Stopped=Started⇒Open=Closed"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragLeft=Started"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})"/>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragDown=DragRight"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬Started=Stopped"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬Half=Closed"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=DragRight"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬DragRight=Stopped"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragUp=Started"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DragUp=DragDown"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="Door={Open,Half,Closed}"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragDown=Stopped"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DirectionChangeDown/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Door,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27,p28,p29,p30"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p27,p28,p29,p30"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p18">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p37">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p31" org.eventb.core.prHyps="p33" org.eventb.core.prInfHyps="p32"/>
+                                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="p36" org.eventb.core.prInfHyps="p35"/>
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p37" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p41">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p38" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p39"/>
+                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p32"/>
+                                                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p40"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p41" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragDown=DragLeft"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragDown=Started"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬Open=Closed">
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="motor=DragUp⇒⊤">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="¬Open=Half">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragLeft=DragRight"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragLeft=Stopped"/>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="⊥⇒door=Closed"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="DragDown=Started⇒door=Closed"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="¬floor=Bottom_Floor">
+            <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DragUp=DragLeft"/>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="motor=Started">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragUp=Stopped"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragRight=Started"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragLeft=Started"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p41" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragDown=DragRight"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="motor=DragUp⇒direction=Up">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬Started=Stopped"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬Half=Closed">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DragUp=DragRight"/>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="floor≠Bottom_Floor">
+            <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="floor" org.eventb.core.type="ℤ"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DragRight=Stopped"/>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="⊤⇒door=Closed"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=Started"/>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="motor=Started⇒door=Closed">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬DragUp=DragDown"/>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="direction=Up">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p40" org.eventb.core.predicate="door=Closed"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="Door={Open,Half,Closed}">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragDown=Stopped"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MotorDragsUp/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="Door,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28,p29,p30,p31"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p28,p29,p30,p31"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p15,p2">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p38">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="p34" org.eventb.core.prInfHyps="p33"/>
+                                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="p37,p2" org.eventb.core.prInfHyps="p36"/>
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p38" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p39">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p33"/>
+                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p36"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p39" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="⊥⇒⊤"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragDown=DragLeft"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragDown=Started"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬Open=Closed">
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="motor=DragUp⇒⊤">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬Open=Half">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragLeft=DragRight"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragLeft=Stopped"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DragUp=DragLeft"/>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="motor=Started">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragUp=Stopped"/>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="⊤⇒⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DragRight=Started"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragLeft=Started"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragDown=DragRight"/>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="motor=DragUp⇒direction=Up">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="DragUp=Started⇒door=Closed"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬Started=Stopped"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬Half=Closed">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=DragRight"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬DragRight=Stopped"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragUp=Started"/>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="motor=Started⇒door=Closed">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DragUp=DragDown"/>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="direction=Up">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="door=Closed"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="Door={Open,Half,Closed}">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragDown=Stopped"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MotorDragsDown/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="Door,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28,p29,p30,p31"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p28,p29,p30,p31"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p19,p2">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p38">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="p34" org.eventb.core.prInfHyps="p33"/>
+                                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="p37,p2" org.eventb.core.prInfHyps="p36"/>
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p38" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p39">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p33"/>
+                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p36"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p39" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="⊥⇒⊤"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragDown=DragLeft"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragDown=Started"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬Open=Closed">
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬Open=Half">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragLeft=DragRight"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragLeft=Stopped"/>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="motor=DragDown⇒⊤">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="DragDown=Started⇒door=Closed"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="direction=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})"/>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="motor=DragDown⇒direction=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DragUp=DragLeft"/>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="motor=Started">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragUp=Stopped"/>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="⊤⇒⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DragRight=Started"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragLeft=Started"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragDown=DragRight"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬Started=Stopped"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬Half=Closed">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=DragRight"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬DragRight=Stopped"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragUp=Started"/>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="motor=Started⇒door=Closed">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DragUp=DragDown"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="door=Closed"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="Door={Open,Half,Closed}">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragDown=Stopped"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MotorDragsLeft/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="Door,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28,p29,p30,p31"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p28,p29,p30,p31"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p22,p2">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="p34,p2" org.eventb.core.prInfHyps="p33"/>
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p35" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p36">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p33"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p36" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="⊥⇒⊤"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragDown=DragLeft"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragDown=Started"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬Open=Closed">
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬Open=Half">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragLeft=DragRight"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragLeft=Stopped"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="DragLeft=Started⇒door=Closed"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DragUp=DragLeft"/>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="motor=Started">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragUp=Stopped"/>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="⊤⇒⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DragRight=Started"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragLeft=Started"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragDown=DragRight"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬Started=Stopped"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬Half=Closed">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=DragRight"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬DragRight=Stopped"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragUp=Started"/>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="motor=Started⇒door=Closed">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DragUp=DragDown"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="door=Closed"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="Door={Open,Half,Closed}">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragDown=Stopped"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MotorDragsRight/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="Door,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5,p6,p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28,p29,p30,p31"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p28,p29,p30,p31"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p24,p2">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="p34,p2" org.eventb.core.prInfHyps="p33"/>
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p35" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p36">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p33"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p36" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="⊥⇒⊤"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragDown=DragLeft"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragDown=Started"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬Open=Closed">
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬Open=Half">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragLeft=DragRight"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragLeft=Stopped"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DragUp=DragLeft"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="DragRight=Started⇒door=Closed"/>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="motor=Started">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragUp=Stopped"/>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="⊤⇒⊤"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DragRight=Started"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragLeft=Started"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragDown=DragRight"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬Started=Stopped"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬Half=Closed">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=DragRight"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬DragRight=Stopped"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragUp=Started"/>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="motor=Started⇒door=Closed">
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DragUp=DragDown"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="door=Closed"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="Door={Open,Half,Closed}">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragDown=Stopped"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MotorStops/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Door,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27,p28,p29,p30"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p27,p28,p29,p30"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p25">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p31">
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p31" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32">
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p32" org.eventb.core.prHyps=""/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragDown=DragLeft"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragDown=Started"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬Open=Closed">
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="¬Open=Half">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragLeft=DragRight"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragLeft=Stopped"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="⊥⇒door=Closed"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DragUp=DragLeft"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragUp=Stopped"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragRight=Started"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragLeft=Started"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragDown=DragRight"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬Started=Stopped"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬Half=Closed">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DragUp=DragRight"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DragRight=Stopped"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=Started"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Stopped=Started⇒door=Closed"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬DragUp=DragDown"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="Door={Open,Half,Closed}">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragDown=Stopped"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="MotorStarts/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Door,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p3,p4,p5,p6,p7,p8,p9"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p27" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28,p29,p30,p31"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p28,p29,p30,p31"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32">
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p32" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p32">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p33" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p34"/>
+                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p34" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
+                                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'">
+                                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p36"/>
+                                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p37"/>
+                                                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p38"/>
+                                                                <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with motor=Stopped" org.eventb.core.prHyps="p1">
+                                                                    <org.eventb.core.prAnte name="'">
+                                                                        <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p35" org.eventb.core.prInfHyps="p39"/>
+                                                                        <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p35"/>
+                                                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                                                                            <org.eventb.core.prAnte name="'">
+                                                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p39" org.eventb.core.prHyps="p26" org.eventb.core.prInfHyps="p40"/>
+                                                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                                                    <org.eventb.core.prAnte name="'">
+                                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p40"/>
+                                                                                    </org.eventb.core.prAnte>
+                                                                                </org.eventb.core.prRule>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragDown=DragLeft">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragDown=Started">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬Open=Closed">
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="Started=Started⇒door=Closed"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬Open=Half">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragLeft=DragRight">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="door∈Door"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="motor=Stopped"/>
+        <org.eventb.core.prPred name="p40" org.eventb.core.predicate="¬⊥"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragLeft=Stopped">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DragUp=DragLeft">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="¬motor=Started"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragUp=Stopped">
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DragRight=Started">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragLeft=Started">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="motor∈Motor"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragDown=DragRight">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="motor=Started⇒⊥"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬Started=Stopped"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬Half=Closed">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=DragRight">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="¬Stopped=Started"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬DragRight=Stopped">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragUp=Started">
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="motor=Started⇒door=Closed"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DragUp=DragDown">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="door=Closed"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="Door={Open,Half,Closed}">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragDown=Stopped">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DoorOpen2Half/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="Door,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7,p8,p9,p10,p11"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6,p7,p8,p9,p10,p11"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29,p30,p31,p32"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p29,p30,p31,p32"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p32">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p33">
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p33" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p34">
+                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p34" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p34">
+                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
+                                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'">
+                                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p36"/>
+                                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                                                    <org.eventb.core.prAnte name="'">
+                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p37"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p38"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p39"/>
+                                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with door=Open" org.eventb.core.prHyps="p1">
+                                                                            <org.eventb.core.prAnte name="'">
+                                                                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p36" org.eventb.core.prInfHyps="p40"/>
+                                                                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p36"/>
+                                                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                                                                                    <org.eventb.core.prAnte name="'">
+                                                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="p31" org.eventb.core.prInfHyps="p41"/>
+                                                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊥ hyp" org.eventb.core.prHyps="p41"/>
+                                                                                    </org.eventb.core.prAnte>
+                                                                                </org.eventb.core.prRule>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragDown=DragLeft">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragDown=Started">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬Open=Closed"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬Open=Half"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragLeft=DragRight">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="door∈Door"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="door=Open"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬DragLeft=Stopped">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragUp=DragLeft">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬motor=Started"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragUp=Stopped">
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬DragRight=Started">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DragLeft=Started">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p41" org.eventb.core.predicate="⊥"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="motor∈Motor"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragDown=DragRight">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p40" org.eventb.core.predicate="Open=Closed"/>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="motor=Started⇒⊥"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor=Started⇒Half=Closed"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="¬Started=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬Half=Closed"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragUp=DragRight">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="¬DragRight=Stopped">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="⊤⇒door=Closed"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragUp=Started">
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="motor=Started⇒door=Closed"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=DragDown">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="door=Closed"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="Door={Open,Half,Closed}"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragDown=Stopped">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.falseHyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DoorClosed2Half/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="Door,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7,p8,p9,p10,p11"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6,p7,p8,p9,p10,p11"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p28,p29,p30,p31"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p28,p29,p30,p31"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p31">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p35">
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p32" org.eventb.core.prHyps="p34" org.eventb.core.prInfHyps="p33"/>
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p35" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p36">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p33"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p37"/>
+                                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p38"/>
+                                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p39"/>
+                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with motor=Stopped" org.eventb.core.prGoal="p36" org.eventb.core.prHyps="p3">
+                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p40">
+                                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p40" org.eventb.core.prHyps="p27"/>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragDown=DragLeft"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragDown=Started"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬Open=Closed"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬Open=Half"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragLeft=DragRight"/>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="door∈Door">
+            <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="motor=Stopped"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DragLeft=Stopped"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=DragLeft"/>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="motor=Started⇒⊤"/>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="¬motor=Started"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragUp=Stopped"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬DragRight=Started"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragLeft=Started"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="motor∈Motor"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragDown=DragRight"/>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="motor=Started⇒⊥"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor=Started⇒Half=Closed"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="¬Started=Stopped"/>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬Half=Closed"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragUp=DragRight"/>
+        <org.eventb.core.prPred name="p40" org.eventb.core.predicate="¬Stopped=Started"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬DragRight=Stopped"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragUp=Started"/>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="motor=Started⇒door=Closed">
+            <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DragUp=DragDown"/>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="door=Closed">
+            <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="Door={Open,Half,Closed}"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragDown=Stopped"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DoorHalf2Closed/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="Door,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p26" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p27,p28,p29,p30"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p27,p28,p29,p30"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p31">
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p31" org.eventb.core.prHyps=""/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor=Started⇒Closed=Closed"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragDown=DragLeft">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragDown=Started">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬Open=Closed">
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="¬Open=Half">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragLeft=DragRight">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragLeft=Stopped">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DragUp=DragLeft">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragUp=Stopped">
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragRight=Started">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragLeft=Started">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragDown=DragRight">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬Started=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬Half=Closed">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DragUp=DragRight">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DragRight=Stopped">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=Started">
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬DragUp=DragDown">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="Door={Open,Half,Closed}">
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragDown=Stopped">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DoorHalf2Open/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p25" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p26,p27,p28,p29"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p26,p27,p28,p29"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p30"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p31"/>
+                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p32"/>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragDown=DragLeft">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragDown=Started">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="¬Open=Closed">
+            <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Door" org.eventb.core.type="ℙ(Door)"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="¬Open=Half">
+            <org.eventb.core.prIdent name="Door" org.eventb.core.type="ℙ(Door)"/>
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragLeft=DragRight">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="door∈Door">
+            <org.eventb.core.prIdent name="Door" org.eventb.core.type="ℙ(Door)"/>
+            <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragLeft=Stopped">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬DragUp=DragLeft">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=Stopped">
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragRight=Started">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragLeft=Started">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})">
+            <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Door" org.eventb.core.type="ℙ(Door)"/>
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="motor∈Motor">
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragDown=DragRight">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬Started=Stopped">
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="¬Half=Closed">
+            <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Door" org.eventb.core.type="ℙ(Door)"/>
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬DragUp=DragRight">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragRight=Stopped">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬DragUp=Started">
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬DragUp=DragDown">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="Door={Open,Half,Closed}">
+            <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Door" org.eventb.core.type="ℙ(Door)"/>
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragDown=Stopped">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DoorHalf2Open/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="Door,Motor">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down},{Left},{Right}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6,p7,p8,p9,p10,p11"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p5,p6,p7,p8,p9,p10,p11"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped}))" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27,p28"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Door,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p29,p30,p31,p32"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p29,p30,p31,p32"/>
+                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p31">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p33">
+                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p33" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p34">
+                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p34" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p34">
+                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p35"/>
+                                                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'">
+                                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p35" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p36"/>
+                                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                                                    <org.eventb.core.prAnte name="'">
+                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p37"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p38"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p39"/>
+                                                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="eh with door=Half" org.eventb.core.prHyps="p1">
+                                                                            <org.eventb.core.prAnte name="'">
+                                                                                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p36" org.eventb.core.prInfHyps="p40"/>
+                                                                                <org.eventb.core.prHypAction name="DESELECT1" org.eventb.core.prHyps="p36"/>
+                                                                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prHyps="">
+                                                                                    <org.eventb.core.prAnte name="'">
+                                                                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p40" org.eventb.core.prHyps="p32" org.eventb.core.prInfHyps="p41"/>
+                                                                                        <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊥ hyp" org.eventb.core.prHyps="p41"/>
+                                                                                    </org.eventb.core.prAnte>
+                                                                                </org.eventb.core.prRule>
+                                                                            </org.eventb.core.prAnte>
+                                                                        </org.eventb.core.prRule>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="Half" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="Open" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="Started" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prIdent name="door" org.eventb.core.type="Door"/>
+        <org.eventb.core.prIdent name="motor" org.eventb.core.type="Motor"/>
+        <org.eventb.core.prPred name="p37" org.eventb.core.predicate="direction∈Direction">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬DragDown=DragLeft">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="¬DragDown=Started">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p31" org.eventb.core.predicate="¬Open=Closed"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Down=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬Open=Half"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="¬DragLeft=DragRight">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p39" org.eventb.core.predicate="door∈Door"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="door=Half"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="¬DragLeft=Stopped">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p40" org.eventb.core.predicate="Half=Closed"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬DragUp=DragLeft">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p34" org.eventb.core.predicate="¬motor=Started"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="¬DragUp=Stopped">
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Direction={Up,Down,Left,Right}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="motor=Started⇒Open=Closed"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="¬DragRight=Started">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬DragLeft=Started">
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Left=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p41" org.eventb.core.predicate="⊥"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Up=Left">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Up=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p38" org.eventb.core.predicate="motor∈Motor"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="¬DragDown=DragRight">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p33" org.eventb.core.predicate="motor=Started⇒⊥"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="¬Started=Stopped">
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p32" org.eventb.core.predicate="¬Half=Closed"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="Motor={DragUp,DragDown,DragLeft,DragRight,Started,Stopped}">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragLeft" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬DragUp=DragRight">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="¬DragRight=Stopped">
+            <org.eventb.core.prIdent name="DragRight" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p35" org.eventb.core.predicate="⊤⇒door=Closed"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬DragUp=Started">
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="motor=Started⇒door=Closed"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬DragUp=DragDown">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="DragUp" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p36" org.eventb.core.predicate="door=Closed"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Down=Right">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="Door={Open,Half,Closed}"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬DragDown=Stopped">
+            <org.eventb.core.prIdent name="DragDown" org.eventb.core.type="Motor"/>
+            <org.eventb.core.prIdent name="Stopped" org.eventb.core.type="Motor"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.eq:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.falseHyp"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

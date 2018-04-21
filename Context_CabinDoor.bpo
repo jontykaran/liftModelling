@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="Door" org.eventb.core.type="ℙ(Door)"/>
+        <org.eventb.core.poIdentifier name="Closed" org.eventb.core.type="Door"/>
+        <org.eventb.core.poIdentifier name="Half" org.eventb.core.type="Door"/>
+        <org.eventb.core.poIdentifier name="Open" org.eventb.core.type="Door"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/CourseWork/Context_CabinDoor.bpo|org.eventb.core.poFile#Context_CabinDoor|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(Door,{Open},{Half},{Closed})" org.eventb.core.source="/CourseWork/Context_CabinDoor.buc|org.eventb.core.contextFile#Context_CabinDoor|org.eventb.core.axiom#+"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

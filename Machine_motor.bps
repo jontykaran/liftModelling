@@ -28,9 +28,9 @@
     <org.eventb.core.psStatus name="MotorDragsLeft/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="50" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="MotorDragsLeft/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="50" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="MotorDragsLeft/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="50" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorDragRight/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="50" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorDragRight/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="50" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorDragRight/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="50" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsRight/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsRight/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorDragsRight/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="MotorStarts/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="50" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="MotorStarts/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="50" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="MotorStarts/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="50" org.eventb.core.psManual="false"/>

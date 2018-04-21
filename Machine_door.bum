@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;ch.ethz.eventb.qualprob.qpConfig" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="door ≔ Open" org.eventb.core.label="act4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.refinesMachine name="(" org.eventb.core.target="Machine_motor"/>
+    <org.eventb.core.seesContext name=")" org.eventb.core.target="Context_CabinFloor"/>
+    <org.eventb.core.seesContext name="*" org.eventb.core.target="Context_CabinMovingDirection"/>
+    <org.eventb.core.seesContext name="+" org.eventb.core.target="Context_CabinMotor"/>
+    <org.eventb.core.seesContext name="," org.eventb.core.target="Context_CabinDoor"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="-" org.eventb.core.identifier="floor"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="." org.eventb.core.identifier="direction"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="/" org.eventb.core.identifier="motor"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="0" org.eventb.core.identifier="door"/>
+    <org.eventb.core.invariant name="1" org.eventb.core.label="inv1" org.eventb.core.predicate="door ∈ Door"/>
+    <org.eventb.core.invariant name="2" org.eventb.core.label="inv2" org.eventb.core.predicate="motor = Started ⇒ door = Closed"/>
+    <org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveUp">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveUp"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveDown">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveDown"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveLeft">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveLeft"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveRight">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveRight"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DirectionChangeUp">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DirectionChangeUp"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="8" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DirectionChangeDown">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DirectionChangeDown"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="9" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MotorDragsUp">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MotorDragsUp"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd5" org.eventb.core.predicate="door = Closed"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name=":" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MotorDragsDown">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MotorDragsDown"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd5" org.eventb.core.predicate="door = Closed"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MotorDragsLeft">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MotorDragsLeft"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="door = Closed"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="=" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MotorDragsRight">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MotorDragsRight"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd4" org.eventb.core.predicate="door = Closed"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MotorStops">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MotorStops"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="?" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MotorStarts">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MotorStarts"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="@" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DoorOpen2Half">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="door = Open"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="door ≔ Half" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="A" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DoorHalf2Closed">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="door = Half"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="door ≔ Closed" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="B" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DoorClosed2Half">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="door = Closed"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="motor = Stopped"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="door ≔ Half" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="C" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DoorHalf2Open">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="door = Half"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="door ≔ Open" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>
