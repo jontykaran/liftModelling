@@ -6,8 +6,13 @@
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10,p11,p12,p13"/>
 <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10,p11,p12,p13"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p5,p6,p2,p4,p7,p8,p9,p10,p11,p12,p13">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p5,p6,p2,p4,p7,p8,p9,p10,p11,p12,p13">
 <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+</org.eventb.core.prRule>
+</org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
@@ -20,6 +25,7 @@
 <org.eventb.core.prIdent name="TotalShaft" org.eventb.core.type="ℤ"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Up=Down"/>
+<org.eventb.core.prPred name="p14" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Left=Right"/>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="TotalShaft=2"/>
 <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Up=Left"/>
@@ -34,7 +40,8 @@
 <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Bottom_Floor=0"/>
 <org.eventb.core.prPred name="p7" org.eventb.core.predicate="Direction={Up,Down,Left,Right}"/>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="MoveUp/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
 <org.eventb.core.lang name="L"/>
@@ -482,9 +489,14 @@
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
 <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -495,6 +507,7 @@
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
@@ -517,7 +530,7 @@
 <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="direction∈Direction">
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="direction∈Direction">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
@@ -539,7 +552,8 @@
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="MoveRight/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
 <org.eventb.core.lang name="L"/>
@@ -547,9 +561,14 @@
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
 <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -560,6 +579,7 @@
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
@@ -582,7 +602,7 @@
 <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="direction∈Direction">
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="direction∈Direction">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
@@ -604,7 +624,8 @@
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="DirectionChangeDown/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
 <org.eventb.core.lang name="L"/>
@@ -612,9 +633,14 @@
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
 <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -625,6 +651,7 @@
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
@@ -647,7 +674,7 @@
 <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="direction∈Direction">
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="direction∈Direction">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
@@ -669,7 +696,8 @@
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="DirectionChangeDown/grd2/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
 <org.eventb.core.lang name="L"/>
@@ -678,10 +706,11 @@
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
 <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -697,6 +726,7 @@
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="floor≠Bottom_Floor"/>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
@@ -709,7 +739,7 @@
 <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬floor=Bottom_Floor"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬floor=Bottom_Floor"/>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Left">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
@@ -720,7 +750,7 @@
 <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="direction∈Direction">
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="direction∈Direction">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
@@ -751,9 +781,14 @@
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
 <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -764,6 +799,7 @@
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
@@ -786,7 +822,7 @@
 <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="direction∈Direction">
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="direction∈Direction">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
@@ -808,7 +844,8 @@
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="DirectioChangeUp/grd2/GRD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
 <org.eventb.core.lang name="L"/>
@@ -817,10 +854,11 @@
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5,p6,p7,p8"/>
 <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5,p6,p7,p8"/>
 <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9">
+<org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
 <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
-<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -835,6 +873,7 @@
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
@@ -847,7 +886,7 @@
 <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬floor=Top_Floor"/>
+<org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬floor=Top_Floor"/>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Up=Left">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="Left" org.eventb.core.type="Direction"/>
@@ -858,7 +897,7 @@
 <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p10" org.eventb.core.predicate="direction∈Direction">
+<org.eventb.core.prPred name="p11" org.eventb.core.predicate="direction∈Direction">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
@@ -1034,9 +1073,14 @@
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
 <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -1047,6 +1091,7 @@
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
@@ -1069,7 +1114,7 @@
 <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="direction∈Direction">
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="direction∈Direction">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
@@ -1091,7 +1136,8 @@
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="MoveRight/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
 <org.eventb.core.lang name="L"/>
@@ -1099,9 +1145,14 @@
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
 <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -1112,6 +1163,7 @@
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
@@ -1134,7 +1186,7 @@
 <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="direction∈Direction">
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="direction∈Direction">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
@@ -1156,7 +1208,8 @@
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="DirectioChangeUp/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
 <org.eventb.core.lang name="L"/>
@@ -1164,9 +1217,14 @@
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
 <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -1177,6 +1235,7 @@
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
@@ -1199,7 +1258,7 @@
 <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="direction∈Direction">
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="direction∈Direction">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
@@ -1221,7 +1280,8 @@
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 <org.eventb.core.prProof name="DirectionChangeDown/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
 <org.eventb.core.lang name="L"/>
@@ -1229,9 +1289,14 @@
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4,p5,p6,p7"/>
 <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7"/>
-<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
 <org.eventb.core.prAnte name="'">
 <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p8"/>
+<org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+<org.eventb.core.prAnte name="'">
+<org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p9"/>
+</org.eventb.core.prAnte>
+</org.eventb.core.prRule>
 </org.eventb.core.prAnte>
 </org.eventb.core.prRule>
 </org.eventb.core.prAnte>
@@ -1242,6 +1307,7 @@
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
+<org.eventb.core.prPred name="p8" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
@@ -1264,7 +1330,7 @@
 <org.eventb.core.prIdent name="Right" org.eventb.core.type="Direction"/>
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
-<org.eventb.core.prPred name="p8" org.eventb.core.predicate="direction∈Direction">
+<org.eventb.core.prPred name="p9" org.eventb.core.predicate="direction∈Direction">
 <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
 <org.eventb.core.prIdent name="direction" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
@@ -1286,6 +1352,7 @@
 <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
 </org.eventb.core.prPred>
 <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
-<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+<org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
 </org.eventb.core.prProof>
 </org.eventb.core.prFile>

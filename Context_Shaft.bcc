@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase">
+<org.eventb.core.scContextFile org.eventb.core.accurate="false" org.eventb.core.configuration="org.eventb.records.ctxRecord;de.prob.symbolic.ctxBase;de.prob.units.mchBase">
 <org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/CourseWork/Context_CabinMovingDirection.bcc|org.eventb.core.scContextFile#Context_CabinMovingDirection" org.eventb.core.source="/CourseWork/Context_Shaft.buc|org.eventb.core.contextFile#Context_Shaft|org.eventb.core.extendsContext#*"/>
 <org.eventb.core.scInternalContext name="Context_CabinMovingDirection">
 <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})" org.eventb.core.source="/CourseWork/Context_CabinMovingDirection.buc|org.eventb.core.contextFile#Context_CabinMovingDirection|org.eventb.core.axiom#," org.eventb.core.theorem="true"/>
@@ -10,6 +10,10 @@
 <org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" de.prob.units.unitPragmaAttribute="" name="Up" org.eventb.core.source="/CourseWork/Context_CabinMovingDirection.buc|org.eventb.core.contextFile#Context_CabinMovingDirection|org.eventb.core.constant#)" org.eventb.core.type="Direction"/>
 </org.eventb.core.scInternalContext>
 <org.eventb.core.scAxiom name="Context_CabinMovingDirectioo" org.eventb.core.label="axm1" org.eventb.core.predicate="TotalShaft∈ℕ" org.eventb.core.source="/CourseWork/Context_Shaft.buc|org.eventb.core.contextFile#Context_Shaft|org.eventb.core.axiom#(" org.eventb.core.theorem="false"/>
-<org.eventb.core.scAxiom name="Context_CabinMovingDirectiop" org.eventb.core.label="axm2" org.eventb.core.predicate="TotalShaft=2" org.eventb.core.source="/CourseWork/Context_Shaft.buc|org.eventb.core.contextFile#Context_Shaft|org.eventb.core.axiom#)" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="Context_CabinMovingDirectiop" org.eventb.core.label="axm2" org.eventb.core.predicate="TotalShaft=2" org.eventb.core.source="/CourseWork/Context_Shaft.buc|org.eventb.core.contextFile#Context_Shaft|org.eventb.core.axiom#)" org.eventb.core.theorem="true"/>
+<org.eventb.core.scAxiom name="Context_CabinMovingDirectioq" org.eventb.core.label="axm4" org.eventb.core.predicate="⊤" org.eventb.core.source="/CourseWork/Context_Shaft.buc|org.eventb.core.contextFile#Context_Shaft|org.eventb.core.axiom#\/" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="Lift" org.eventb.core.source="/CourseWork/Context_Shaft.buc|org.eventb.core.contextFile#Context_Shaft|org.eventb.core.carrierSet#+" org.eventb.core.type="ℙ(Lift)"/>
+<org.eventb.core.scCarrierSet name="LiftShaft" org.eventb.core.source="/CourseWork/Context_Shaft.buc|org.eventb.core.contextFile#Context_Shaft|org.eventb.core.carrierSet#-" org.eventb.core.type="ℙ(LiftShaft)"/>
+<org.eventb.core.scCarrierSet name="Shaft" org.eventb.core.source="/CourseWork/Context_Shaft.buc|org.eventb.core.contextFile#Context_Shaft|org.eventb.core.carrierSet#," org.eventb.core.type="ℙ(Shaft)"/>
 <org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" de.prob.units.unitPragmaAttribute="" name="TotalShaft" org.eventb.core.source="/CourseWork/Context_Shaft.buc|org.eventb.core.contextFile#Context_Shaft|org.eventb.core.constant#'" org.eventb.core.type="ℤ"/>
 </org.eventb.core.scContextFile>
