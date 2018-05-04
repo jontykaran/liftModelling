@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poIdentifier name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+<org.eventb.core.poIdentifier name="Down" org.eventb.core.type="Direction"/>
+<org.eventb.core.poIdentifier name="Left" org.eventb.core.type="Direction"/>
+<org.eventb.core.poIdentifier name="Right" org.eventb.core.type="Direction"/>
+<org.eventb.core.poIdentifier name="Up" org.eventb.core.type="Direction"/>
+<org.eventb.core.poPredicate name="Directioo" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})" org.eventb.core.source="/CourseWork/Context_CabinMovingDirection.buc|org.eventb.core.contextFile#Context_CabinMovingDirection|org.eventb.core.axiom#,"/>
+<org.eventb.core.poIdentifier name="TotalShaft" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/CourseWork/Context_Shaft.bpo|org.eventb.core.poFile#Context_Shaft|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="TotalShaft∈ℕ" org.eventb.core.source="/CourseWork/Context_Shaft.buc|org.eventb.core.contextFile#Context_Shaft|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TotalShaft=2" org.eventb.core.source="/CourseWork/Context_Shaft.buc|org.eventb.core.contextFile#Context_Shaft|org.eventb.core.axiom#)"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+<org.eventb.core.poIdentifier name="Down" org.eventb.core.type="Direction"/>
+<org.eventb.core.poIdentifier name="Left" org.eventb.core.type="Direction"/>
+<org.eventb.core.poIdentifier name="Right" org.eventb.core.type="Direction"/>
+<org.eventb.core.poIdentifier name="Up" org.eventb.core.type="Direction"/>
+<org.eventb.core.poPredicate name="Directioo" org.eventb.core.predicate="partition(Direction,{Up},{Down},{Left},{Right})" org.eventb.core.source="/CourseWork/Context_CabinMovingDirection.buc|org.eventb.core.contextFile#Context_CabinMovingDirection|org.eventb.core.axiom#,"/>
+<org.eventb.core.poIdentifier name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Top_Floor" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poPredicate name="Bottom_Floos" org.eventb.core.predicate="Top_Floor∈ℕ1" org.eventb.core.source="/CourseWork/Context_CabinFloor.buc|org.eventb.core.contextFile#Context_CabinFloor|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="Bottom_Floot" org.eventb.core.predicate="Bottom_Floor=0" org.eventb.core.source="/CourseWork/Context_CabinFloor.buc|org.eventb.core.contextFile#Context_CabinFloor|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="Bottom_Floou" org.eventb.core.predicate="Top_Floor=3" org.eventb.core.source="/CourseWork/Context_CabinFloor.buc|org.eventb.core.contextFile#Context_CabinFloor|org.eventb.core.axiom#+"/>
+<org.eventb.core.poIdentifier name="Motor" org.eventb.core.type="ℙ(Motor)"/>
+<org.eventb.core.poIdentifier name="DragDown" org.eventb.core.type="Motor"/>
+<org.eventb.core.poIdentifier name="DragLeft" org.eventb.core.type="Motor"/>
+<org.eventb.core.poIdentifier name="DragRight" org.eventb.core.type="Motor"/>
+<org.eventb.core.poIdentifier name="DragUp" org.eventb.core.type="Motor"/>
+<org.eventb.core.poIdentifier name="Started" org.eventb.core.type="Motor"/>
+<org.eventb.core.poIdentifier name="Stopped" org.eventb.core.type="Motor"/>
+<org.eventb.core.poPredicate name="Bottom_Floov" org.eventb.core.predicate="partition(Motor,{DragUp},{DragDown},{DragLeft},{DragRight},{Started},{Stopped})" org.eventb.core.source="/CourseWork/Context_CabinMotor.buc|org.eventb.core.contextFile#Context_CabinMotor|org.eventb.core.axiom#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="direction" org.eventb.core.type="Direction"/>
+<org.eventb.core.poIdentifier name="floor" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="motor" org.eventb.core.type="Motor"/>
+<org.eventb.core.poPredicate name="directioo" org.eventb.core.predicate="floor∈Bottom_Floor ‥ Top_Floor" org.eventb.core.source="/CourseWork/Machine0_CabinFloor.bum|org.eventb.core.machineFile#Machine0_CabinFloor|org.eventb.core.invariant#*"/>
+<org.eventb.core.poPredicate name="directiop" org.eventb.core.predicate="direction∈Direction" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.invariant#-"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectiou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Stopped=DragUp⇒Up=Up" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectiou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Stopped=DragDown⇒Up=Down" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectiou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Stopped=DragLeft⇒Up=Left" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectiou"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Stopped=DragRight⇒Up=Right" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContext_CabinMovingDirectiou" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="direction'" org.eventb.core.type="Direction"/>
+<org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="Motor"/>
+<org.eventb.core.poIdentifier name="floor'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContext_CabinMovingDirectiou" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTIDENTContext_CabinMovingDirectiou" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="EVTIDENTContext_CabinMovingDirectiov" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="floor'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContext_CabinMovingDirectiov" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTIDENTContext_CabinMovingDirectiov" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="floor≠Top_Floor" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#.|org.eventb.core.guard#internal1"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="direction=Up" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#.|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="floor&lt;Top_Floor" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#.|org.eventb.core.guard#internal2"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTIDENTContext_CabinMovingDirectiow" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="floor'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContext_CabinMovingDirectiow" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTIDENTContext_CabinMovingDirectiow" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="floor≠Bottom_Floor" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#\/|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="direction=Down" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#\/|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="floor&gt;Bottom_Floor" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#\/|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="DirectionChangeUp/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectiox"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragUp⇒Up=Up" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#DirectionChangeUp\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="DirectionChangeUp/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectiox"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragDown⇒Up=Down" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#DirectionChangeUp\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="DirectionChangeUp/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectiox"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragLeft⇒Up=Left" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#DirectionChangeUp\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="DirectionChangeUp/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectiox"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragRight⇒Up=Right" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#4"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#8"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#DirectionChangeUp\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContext_CabinMovingDirectiox" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="direction'" org.eventb.core.type="Direction"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContext_CabinMovingDirectiox" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTIDENTContext_CabinMovingDirectiox" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="direction=Down" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#4|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="floor≠Top_Floor" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#4|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="motor=Stopped" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#8|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="DirectionChangeDown/grd3/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTHYPContext_CabinMovingDirectioy)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=Stopped" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#9|org.eventb.core.guard#("/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#9|org.eventb.core.guard#("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTHYPContext_CabinMovingDirectioy)"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="DirectionChangeDown/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectioy"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragUp⇒Down=Up" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#9"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#DirectionChangeDown\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="DirectionChangeDown/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectioy"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragDown⇒Down=Down" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#9"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#DirectionChangeDown\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="DirectionChangeDown/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectioy"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragLeft⇒Down=Left" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#9"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#DirectionChangeDown\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="DirectionChangeDown/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectioy"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragRight⇒Down=Right" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#5"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#9"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#DirectionChangeDown\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContext_CabinMovingDirectioy" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="direction'" org.eventb.core.type="Direction"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPContext_CabinMovingDirectioy)" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTIDENTContext_CabinMovingDirectioy" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="direction=Up" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#9|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="floor≠Bottom_Floor" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#9|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContext_CabinMovingDirectioy" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTHYPContext_CabinMovingDirectioy)" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="motor=Stopped" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#9|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="MotorWinding/grd1/THM" org.eventb.core.accurate="false" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="direction=Up" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#:|org.eventb.core.guard#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#:|org.eventb.core.guard#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="MotorWinding/grd2/THM" org.eventb.core.accurate="false" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTHYPContext_CabinMovingDirectioz'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="floor≠Top_Floor" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#:|org.eventb.core.guard#("/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#:|org.eventb.core.guard#("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTHYPContext_CabinMovingDirectioz'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="MotorWinding/grd3/THM" org.eventb.core.accurate="false" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTHYPContext_CabinMovingDirectioz("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=Stopped" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#:|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#:|org.eventb.core.guard#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTHYPContext_CabinMovingDirectioz("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTHYPContext_CabinMovingDirectioz'" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="direction=Up" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#:|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPContext_CabinMovingDirectioz(" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTHYPContext_CabinMovingDirectioz'" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="floor≠Top_Floor" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#:|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContext_CabinMovingDirectioz" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTHYPContext_CabinMovingDirectioz(" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="motor=Stopped" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#:|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="floor&lt;Top_Floor" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#:|org.eventb.core.guard#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="MotorUnwinding/grd4/THM" org.eventb.core.accurate="false" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTHYPContext_CabinMovingDirectio{)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="floor&gt;Bottom_Floor" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#;|org.eventb.core.guard#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#;|org.eventb.core.guard#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTHYPContext_CabinMovingDirectio{)"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTHYPContext_CabinMovingDirectio{)" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="direction=Down" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#;|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="floor≠Bottom_Floor" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#;|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="motor=Stopped" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#;|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContext_CabinMovingDirectio{" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTHYPContext_CabinMovingDirectio{)" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="floor&gt;Bottom_Floor" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#;|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="MotorStops/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectio\|"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Stopped=DragUp⇒direction=Up" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#MotorStops\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="MotorStops/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectio\|"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Stopped=DragDown⇒direction=Down" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#MotorStops\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="MotorStops/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectio\|"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Stopped=DragLeft⇒direction=Left" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#MotorStops\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="MotorStops/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectio\|"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="Stopped=DragRight⇒direction=Right" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#="/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#MotorStops\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContext_CabinMovingDirectio|" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="Motor"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContext_CabinMovingDirectio|" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTIDENTContext_CabinMovingDirectio\|" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="motor≠Stopped" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#=|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="MoveLeft/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectio}"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragUp⇒Left=Up" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#0"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#?"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#MoveLeft\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="MoveLeft/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectio}"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragDown⇒Left=Down" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#0"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#?"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#MoveLeft\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="MoveLeft/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectio}"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragLeft⇒Left=Left" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#0"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#?"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#MoveLeft\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="MoveLeft/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectio}"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragRight⇒Left=Right" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#0"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#?"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#MoveLeft\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContext_CabinMovingDirectio}" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="direction'" org.eventb.core.type="Direction"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContext_CabinMovingDirectio}" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTIDENTContext_CabinMovingDirectio}" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="floor=Top_Floor∨floor=Bottom_Floor" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#0|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="MoveRight/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectio~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragUp⇒Right=Up" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#@"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#MoveRight\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="MoveRight/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectio~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragDown⇒Right=Down" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#@"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#MoveRight\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="MoveRight/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectio~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragLeft⇒Right=Left" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#@"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#MoveRight\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="MoveRight/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTALLHYPContext_CabinMovingDirectio~"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=DragRight⇒Right=Right" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.event#@"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poSequent#MoveRight\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTContext_CabinMovingDirectio~" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="direction'" org.eventb.core.type="Direction"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPContext_CabinMovingDirectio~" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#EVTIDENTContext_CabinMovingDirectio~" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="floor=Top_Floor∨floor=Bottom_Floor" org.eventb.core.source="/CourseWork/Machine1_CabinMovingDirection.bum|org.eventb.core.machineFile#Machine1_CabinMovingDirection|org.eventb.core.event#1|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/CourseWork/Machine3_motor.bpo|org.eventb.core.poFile#Machine3_motor|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="motor∈Motor" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#\/"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="motor=DragUp⇒direction=Up" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#0"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="motor=DragDown⇒direction=Down" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#2"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="motor=DragLeft⇒direction=Left" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#A"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="motor=DragRight⇒direction=Right" org.eventb.core.source="/CourseWork/Machine3_motor.bum|org.eventb.core.machineFile#Machine3_motor|org.eventb.core.invariant#B"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+<org.eventb.core.psStatus name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveUp/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveUp/grd2/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveUp/grd3/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveUp/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveDown/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveDown/grd2/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveDown/grd3/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveDown/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveLeft/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveLeft/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveRight/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveRight/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DirectioChangeUp/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DirectioChangeUp/grd2/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DirectioChangeUp/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DirectionChangeDown/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DirectionChangeDown/grd2/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="DirectionChangeDown/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

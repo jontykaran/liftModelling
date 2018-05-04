@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="9">
-    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
-        <org.eventb.core.poIdentifier name="Bottom_Floor" org.eventb.core.type="ℤ"/>
-        <org.eventb.core.poIdentifier name="Top_Floor" org.eventb.core.type="ℤ"/>
-    </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/CourseWork/Context_CabinFloor.bpo|org.eventb.core.poFile#Context_CabinFloor|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
-        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Top_Floor∈ℕ1" org.eventb.core.source="/CourseWork/Context_CabinFloor.buc|org.eventb.core.contextFile#Context_CabinFloor|org.eventb.core.axiom#("/>
-        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Bottom_Floor=0" org.eventb.core.source="/CourseWork/Context_CabinFloor.buc|org.eventb.core.contextFile#Context_CabinFloor|org.eventb.core.axiom#*"/>
-        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Top_Floor=3" org.eventb.core.source="/CourseWork/Context_CabinFloor.buc|org.eventb.core.contextFile#Context_CabinFloor|org.eventb.core.axiom#+"/>
-    </org.eventb.core.poPredicateSet>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Top_Floor" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/CourseWork/Context_CabinFloor.bpo|org.eventb.core.poFile#Context_CabinFloor|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Top_Floor∈ℕ1" org.eventb.core.source="/CourseWork/Context_CabinFloor.buc|org.eventb.core.contextFile#Context_CabinFloor|org.eventb.core.axiom#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Bottom_Floor=0" org.eventb.core.source="/CourseWork/Context_CabinFloor.buc|org.eventb.core.contextFile#Context_CabinFloor|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Top_Floor=3" org.eventb.core.source="/CourseWork/Context_CabinFloor.buc|org.eventb.core.contextFile#Context_CabinFloor|org.eventb.core.axiom#+"/>
+</org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>
