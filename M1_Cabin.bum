@@ -1,33 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;ch.ethz.eventb.qualprob.qpConfig" version="5">
 <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
-<org.eventb.core.action name="'" org.eventb.core.assignment="floor ≔ Bottom_Floor" org.eventb.core.label="act1"/>
-<org.eventb.core.action name="(" org.eventb.core.assignment="cabin ≔ {1}" org.eventb.core.label="act2"/>
-<org.eventb.core.action name=")" org.eventb.core.assignment="position ≔ {1 ↦ Bottom_Floor}" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="floor ≔ ∅" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="currentFloor ≔ Bottom_Floor" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="cabin ≔ ∅" org.eventb.core.label="act2"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="position ≔ ∅" org.eventb.core.label="act3"/>
 </org.eventb.core.event>
-<org.eventb.core.seesContext name="(" org.eventb.core.target="C1_Cabin"/>
 <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=")" org.eventb.core.identifier="floor"/>
 <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="/" org.eventb.core.identifier="position"/>
 <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="*" org.eventb.core.identifier="cabin"/>
-<org.eventb.core.invariant name="+" org.eventb.core.label="inv1" org.eventb.core.predicate="floor ∈ Bottom_Floor‥Top_Floor"/>
-<org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="cabin ⊆ ℕ1"/>
-<org.eventb.core.invariant name="-" org.eventb.core.label="inv3" org.eventb.core.predicate="position ∈ cabin ↣ {floor}"/>
+<org.eventb.core.invariant name="+" org.eventb.core.label="inv1" org.eventb.core.predicate="floor ⊆ Bottom_Floor‥Top_Floor"/>
+<org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="cabin ⊆ Cabin"/>
+<org.eventb.core.invariant name="-" org.eventb.core.label="inv3" org.eventb.core.predicate="position ∈ cabin ↣ floor"/>
 <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AddCabin">
 <org.eventb.core.parameter name="'" org.eventb.core.identifier="c"/>
-<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="c ∈ ℕ1"/>
 <org.eventb.core.action name=")" org.eventb.core.assignment="cabin ≔ cabin ∪ {c}" org.eventb.core.label="act1"/>
 <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="c ∉ cabin"/>
-<org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="p ∈ ℕ1  "/>
-<org.eventb.core.parameter name="," org.eventb.core.identifier="p"/>
-<org.eventb.core.guard name="-" org.eventb.core.label="grd4" org.eventb.core.predicate="p ∈ Bottom_Floor‥Top_Floor"/>
-<org.eventb.core.guard name="." org.eventb.core.label="grd5" org.eventb.core.predicate="p ∉ ran(position)"/>
-<org.eventb.core.action name="/" org.eventb.core.assignment="position ≔ position ∪ {c ↦ p}" org.eventb.core.label="act2"/>
+<org.eventb.core.parameter name="," org.eventb.core.identifier="f"/>
+<org.eventb.core.guard name="-" org.eventb.core.label="grd4" org.eventb.core.predicate="f ∈ Bottom_Floor‥Top_Floor"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd5" org.eventb.core.predicate="f ∉ floor "/>
+<org.eventb.core.action name="0" org.eventb.core.assignment="floor ≔ floor ∪ {f}" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="1" org.eventb.core.assignment="position ≔ position ∪ {c↦f}" org.eventb.core.label="act4"/>
 </org.eventb.core.event>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="RemoveCabin">
+<org.eventb.core.event ch.ethz.eventb.decomposition.external="true" ch.ethz.eventb.qualprob.probabilistic="false" name="1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="RemoveCabin">
 <org.eventb.core.parameter name="'" org.eventb.core.identifier="c"/>
 <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="c ∈ cabin"/>
-<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="c ∈ ℕ1"/>
 <org.eventb.core.action name="*" org.eventb.core.assignment="cabin ≔ cabin ∖ {c}" org.eventb.core.label="act1"/>
-<org.eventb.core.action name="+" org.eventb.core.assignment="position ≔ {c} ⩤ position" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="floor ≔ floor ∖ {position(c)}" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="position ≔ {c} ⩤ position " org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="2" org.eventb.core.target="C1_Cabin"/>
+<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="3" org.eventb.core.identifier="currentFloor"/>
+<org.eventb.core.invariant name="4" org.eventb.core.label="inv4" org.eventb.core.predicate="currentFloor ∈ Bottom_Floor‥Top_Floor"/>
+<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MoveUp">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="lift_No"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="lift_No ∈ dom(position)"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="position(lift_No) ≠ Top_Floor"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="position(lift_No) + 1 ∉ ran(position)"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="floor ≔ (floor ∖ {position(lift_No)} ) ∪ {position(lift_No) + 1}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="position ≔ position  {lift_No ↦ (position(lift_No) +1)}" org.eventb.core.label="act3"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd4" org.eventb.core.predicate="lift_No ∈ cabin"/>
+</org.eventb.core.event>
+<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MoveDown">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="lift_No"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="lift_No ∈ dom(position)"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="position(lift_No) ≠ Bottom_Floor"/>
+<org.eventb.core.guard name="*" org.eventb.core.label="grd3" org.eventb.core.predicate="position(lift_No) − 1 ∉ ran(position)"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="floor ≔ (floor ∖ {position(lift_No)}) ∪ {position(lift_No) − 1}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="position ≔ position  { lift_No ↦ (position(lift_No) −1)}" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="evt1">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="lift_No"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="lift_No ∈ dom(position)"/>
+<org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="position(lift_No) ≠ Top_Floor"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="floor ≔(floor ∖ {position(lift_No)}) ∪ {position(lift_No) +1}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="floor ∩ position(lift_No)+1 ≠ ∅ ⇒ position ≔ position  {lift_No ↦ (position(lift_No) +1)}" org.eventb.core.label="act2"/>
 </org.eventb.core.event>
 </org.eventb.core.machineFile>
