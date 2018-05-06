@@ -58,10 +58,4 @@
 <org.eventb.core.scAction name="lift_Np" org.eventb.core.assignment="floor ≔ (floor ∖ {position(lift_No)})∪{position(lift_No) − 1}" org.eventb.core.label="act1" org.eventb.core.source="/NewProject/M1_Cabin.bum|org.eventb.core.machineFile#M1_Cabin|org.eventb.core.event#6|org.eventb.core.action#+"/>
 <org.eventb.core.scAction name="lift_Nq" org.eventb.core.assignment="position ≔ position{lift_No ↦ position(lift_No) − 1}" org.eventb.core.label="act2" org.eventb.core.source="/NewProject/M1_Cabin.bum|org.eventb.core.machineFile#M1_Cabin|org.eventb.core.event#6|org.eventb.core.action#,"/>
 </org.eventb.core.scEvent>
-<org.eventb.core.scEvent ch.ethz.eventb.qualprob.probabilistic="false" name="currentFloox" org.eventb.core.accurate="false" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="evt1" org.eventb.core.source="/NewProject/M1_Cabin.bum|org.eventb.core.machineFile#M1_Cabin|org.eventb.core.event#7">
-<org.eventb.core.scGuard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="lift_No∈dom(position)" org.eventb.core.source="/NewProject/M1_Cabin.bum|org.eventb.core.machineFile#M1_Cabin|org.eventb.core.event#7|org.eventb.core.guard#(" org.eventb.core.theorem="false"/>
-<org.eventb.core.scGuard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="position(lift_No)≠Top_Floor" org.eventb.core.source="/NewProject/M1_Cabin.bum|org.eventb.core.machineFile#M1_Cabin|org.eventb.core.event#7|org.eventb.core.guard#)" org.eventb.core.theorem="false"/>
-<org.eventb.core.scParameter name="lift_No" org.eventb.core.source="/NewProject/M1_Cabin.bum|org.eventb.core.machineFile#M1_Cabin|org.eventb.core.event#7|org.eventb.core.parameter#'" org.eventb.core.type="Cabin"/>
-<org.eventb.core.scAction name="lift_Np" org.eventb.core.assignment="floor ≔ (floor ∖ {position(lift_No)})∪{position(lift_No)+1}" org.eventb.core.label="act1" org.eventb.core.source="/NewProject/M1_Cabin.bum|org.eventb.core.machineFile#M1_Cabin|org.eventb.core.event#7|org.eventb.core.action#*"/>
-</org.eventb.core.scEvent>
 </org.eventb.core.scMachineFile>
