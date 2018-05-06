@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="Top_Floor∈ℕ1" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="Bottom_Floor∈ℤ" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#+" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="Top_Floor=3" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#," org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="axm4" org.eventb.core.predicate="Bottom_Floor=0" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#-" org.eventb.core.theorem="false"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" de.prob.units.unitPragmaAttribute="" name="Bottom_Floor" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.constant#)" org.eventb.core.type="ℤ"/>
+<org.eventb.core.scCarrierSet name="Cabin" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(Cabin)"/>
+<org.eventb.core.scCarrierSet name="Floor" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.carrierSet#." org.eventb.core.type="ℙ(Floor)"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" de.prob.units.unitPragmaAttribute="" name="Top_Floor" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.constant#(" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scContextFile>

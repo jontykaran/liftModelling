@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="6">
+<org.eventb.core.poIdentifier name="Cabin" org.eventb.core.type="ℙ(Cabin)"/>
+<org.eventb.core.poIdentifier name="Floor" org.eventb.core.type="ℙ(Floor)"/>
+<org.eventb.core.poIdentifier name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="Top_Floor" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/NewProject/C1_Cabin.bpo|org.eventb.core.poFile#C1_Cabin|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="6">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Top_Floor∈ℕ1" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#*"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Bottom_Floor∈ℤ" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#+"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="Top_Floor=3" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#,"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="Bottom_Floor=0" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#-"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

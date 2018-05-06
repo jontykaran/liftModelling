@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase;de.prob.units.mchBase" version="3">
+<org.eventb.core.carrierSet name="'" org.eventb.core.identifier="Cabin"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="(" org.eventb.core.identifier="Top_Floor"/>
+<org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=")" org.eventb.core.identifier="Bottom_Floor"/>
+<org.eventb.core.axiom name="*" org.eventb.core.label="axm1" org.eventb.core.predicate="Top_Floor ∈ ℕ1"/>
+<org.eventb.core.axiom name="+" org.eventb.core.label="axm2" org.eventb.core.predicate="Bottom_Floor ∈ ℤ"/>
+<org.eventb.core.axiom name="," org.eventb.core.label="axm3" org.eventb.core.predicate="Top_Floor = 3"/>
+<org.eventb.core.axiom name="-" org.eventb.core.label="axm4" org.eventb.core.predicate="Bottom_Floor = 0"/>
+<org.eventb.core.carrierSet name="." org.eventb.core.identifier="Floor"/>
+</org.eventb.core.contextFile>
