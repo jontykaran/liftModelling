@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="42">
+<org.eventb.core.poFile org.eventb.core.poStamp="44">
 <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="16">
 <org.eventb.core.poIdentifier name="Cabin" org.eventb.core.type="ℙ(Cabin)"/>
 <org.eventb.core.poIdentifier name="Bottom_Floor" org.eventb.core.type="ℤ"/>
@@ -142,13 +142,13 @@
 <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="lift_No∈cabin" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#1|org.eventb.core.guard#-"/>
 <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="position(lift_No) − 1∉ran(position)" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#1|org.eventb.core.guard#*"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="MoveRight/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="38">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTHYPshaftcabinPoy("/>
+<org.eventb.core.poSequent name="MoveRight/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTHYPshaftcabinPoy)"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lift_No∈dom(position)∧position∈Cabin ⇸ ℤ∧(position(lift_No)=Top_Floor∨(lift_No∈dom(position)∧position∈Cabin ⇸ ℤ))" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#6|org.eventb.core.guard#*"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#6|org.eventb.core.guard#*"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTHYPshaftcabinPoy("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTHYPshaftcabinPoy)"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="MoveRight/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="39">
+<org.eventb.core.poSequent name="MoveRight/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="44">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTALLHYPshaftcabinPoy"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="shaftcabinPos∈(shaft ⩥ {lift_No})∪{Shaft2 ↦ lift_No} ⤔ floor" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.invariant#5"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#6"/>
@@ -160,20 +160,21 @@
 <org.eventb.core.poIdentifier name="lift_No" org.eventb.core.type="Cabin"/>
 <org.eventb.core.poIdentifier name="shaft'" org.eventb.core.type="ℙ(Shaft×Cabin)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPshaftcabinPoy(" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTIDENTshaftcabinPoy" org.eventb.core.poStamp="38">
+<org.eventb.core.poPredicateSet name="EVTHYPshaftcabinPoy)" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTIDENTshaftcabinPoy" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lift_No∈dom(position)" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#6|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lift_No∈cabin" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#6|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="dom(shaft ▷ {lift_No})={Shaft1}" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#6|org.eventb.core.guard#,"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPshaftcabinPoy" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTHYPshaftcabinPoy(" org.eventb.core.poStamp="38">
-<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="position(lift_No)=Top_Floor∨position(lift_No)=Bottom_Floor" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#6|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPshaftcabinPoy" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTHYPshaftcabinPoy)" org.eventb.core.poStamp="44">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="position(lift_No)=Top_Floor∨position(lift_No)=Bottom_Floor" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#6|org.eventb.core.guard#*"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poSequent name="MoveLeft/grd2/WD" org.eventb.core.accurate="false" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="42">
-<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTHYPshaftcabinPoz("/>
+<org.eventb.core.poSequent name="MoveLeft/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="43">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTHYPshaftcabinPoz)"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lift_No∈dom(position)∧position∈Cabin ⇸ ℤ∧(position(lift_No)=Top_Floor∨(lift_No∈dom(position)∧position∈Cabin ⇸ ℤ))" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#7|org.eventb.core.guard#)"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#7|org.eventb.core.guard#)"/>
-<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTHYPshaftcabinPoz("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTHYPshaftcabinPoz)"/>
 </org.eventb.core.poSequent>
-<org.eventb.core.poSequent name="MoveLeft/inv2/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="42">
+<org.eventb.core.poSequent name="MoveLeft/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="43">
 <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTALLHYPshaftcabinPoz"/>
 <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="shaftcabinPos∈(shaft ⩥ {lift_No})∪{Shaft1 ↦ lift_No} ⤔ floor" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.invariant#5"/>
 <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#7"/>
@@ -185,12 +186,13 @@
 <org.eventb.core.poIdentifier name="lift_No" org.eventb.core.type="Cabin"/>
 <org.eventb.core.poIdentifier name="shaft'" org.eventb.core.type="ℙ(Shaft×Cabin)"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTHYPshaftcabinPoz(" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTIDENTshaftcabinPoz" org.eventb.core.poStamp="41">
+<org.eventb.core.poPredicateSet name="EVTHYPshaftcabinPoz)" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTIDENTshaftcabinPoz" org.eventb.core.poStamp="0">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lift_No∈dom(position)" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#7|org.eventb.core.guard#("/>
 <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lift_No∈cabin" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#7|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="dom(shaft ▷ {lift_No})={Shaft2}" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#7|org.eventb.core.guard#,"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="EVTALLHYPshaftcabinPoz" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTHYPshaftcabinPoz(" org.eventb.core.poStamp="41">
-<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="position(lift_No)=Top_Floor∨position(lift_No)=Bottom_Floor" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#7|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicateSet name="EVTALLHYPshaftcabinPoz" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#EVTHYPshaftcabinPoz)" org.eventb.core.poStamp="43">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="position(lift_No)=Top_Floor∨position(lift_No)=Bottom_Floor" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#7|org.eventb.core.guard#)"/>
 </org.eventb.core.poPredicateSet>
 <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/NewProject/M2_Shaft.bpo|org.eventb.core.poFile#M2_Shaft|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="32">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="shaft∈Shaft ⤔ cabin" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.invariant#3"/>
