@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
+        <org.eventb.core.poIdentifier name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
+        <org.eventb.core.poIdentifier name="Closed" org.eventb.core.type="DoorStatus"/>
+        <org.eventb.core.poIdentifier name="Half" org.eventb.core.type="DoorStatus"/>
+        <org.eventb.core.poIdentifier name="Open" org.eventb.core.type="DoorStatus"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/NewProject/C4_Door.bpo|org.eventb.core.poFile#C4_Door|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(DoorStatus,{Open},{Half},{Closed})" org.eventb.core.source="/NewProject/C4_Door.buc|org.eventb.core.contextFile#C4_Door|org.eventb.core.axiom#,"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
