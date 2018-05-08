@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;ch.ethz.eventb.qualprob.qpConfig" version="5">
-<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
-<org.eventb.core.action name="'" org.eventb.core.assignment="floor ≔ ∅" org.eventb.core.label="act1"/>
-<org.eventb.core.action name="(" org.eventb.core.assignment="cabin ≔ ∅" org.eventb.core.label="act2"/>
-<org.eventb.core.action name=")" org.eventb.core.assignment="position ≔ ∅" org.eventb.core.label="act3"/>
-<org.eventb.core.action name="*" org.eventb.core.assignment="shaft ≔ ∅" org.eventb.core.label="act4"/>
-<org.eventb.core.action name="+" org.eventb.core.assignment="move1 ≔ 1" org.eventb.core.label="act5"/>
-<org.eventb.core.action name="," org.eventb.core.assignment="move2 ≔ 1" org.eventb.core.label="act6"/>
-<org.eventb.core.action name="-" org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act7"/>
-</org.eventb.core.event>
-<org.eventb.core.refinesMachine name="(" org.eventb.core.target="M2_Shaft"/>
-<org.eventb.core.seesContext name=")" org.eventb.core.target="C3_Motor"/>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="*" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddCabin">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="AddCabin"/>
-</org.eventb.core.event>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="RemoveCabin">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="RemoveCabin"/>
-</org.eventb.core.event>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveUp">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveUp"/>
-<org.eventb.core.guard name="(" org.eventb.core.label="grd6" org.eventb.core.predicate="motor = Start"/>
-</org.eventb.core.event>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveDown">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveDown"/>
-<org.eventb.core.guard name="(" org.eventb.core.label="grd6" org.eventb.core.predicate="motor = Start"/>
-</org.eventb.core.event>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveRight">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveRight"/>
-<org.eventb.core.guard name="(" org.eventb.core.label="grd5" org.eventb.core.predicate="motor = Start"/>
-</org.eventb.core.event>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveLeft">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveLeft"/>
-<org.eventb.core.guard name="(" org.eventb.core.label="grd5" org.eventb.core.predicate="motor = Start"/>
-</org.eventb.core.event>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="S1Up_S2Up">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="S1Up_S2Up"/>
-<org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act3"/>
-</org.eventb.core.event>
-<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="1" org.eventb.core.identifier="floor"/>
-<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="6" org.eventb.core.identifier="move2"/>
-<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="5" org.eventb.core.identifier="move1"/>
-<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="4" org.eventb.core.identifier="shaft"/>
-<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="3" org.eventb.core.identifier="cabin"/>
-<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="2" org.eventb.core.identifier="position"/>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="S1Down_S2Down">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="S1Down_S2Down"/>
-<org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act3"/>
-</org.eventb.core.event>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="8" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="S1Up_S2Down">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="S1Up_S2Down"/>
-<org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act3"/>
-</org.eventb.core.event>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="9" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="S1Down_S2Up">
-<org.eventb.core.refinesEvent name="'" org.eventb.core.target="S1Down_S2Up"/>
-<org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act3"/>
-</org.eventb.core.event>
-<org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=":" org.eventb.core.identifier="motor"/>
-<org.eventb.core.invariant name=";" org.eventb.core.label="inv1" org.eventb.core.predicate="motor ∈ MotorStatus"/>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="=" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MotorStart">
-<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="motor = Stop"/>
-<org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Start" org.eventb.core.label="act1"/>
-</org.eventb.core.event>
-<org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MotorStop">
-<org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="motor = Stop"/>
-<org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Start" org.eventb.core.label="act1"/>
-</org.eventb.core.event>
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="floor ≔ ∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="cabin ≔ ∅" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="position ≔ ∅" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="shaft ≔ ∅" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="move1 ≔ 1" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="move2 ≔ 1" org.eventb.core.label="act6"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act7"/>
+    </org.eventb.core.event>
+    <org.eventb.core.refinesMachine name="(" org.eventb.core.target="M2_Shaft"/>
+    <org.eventb.core.seesContext name=")" org.eventb.core.target="C3_Motor"/>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="*" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddCabin">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="AddCabin"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="RemoveCabin">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="RemoveCabin"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveUp">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveUp"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd6" org.eventb.core.predicate="motor = Start"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveDown">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveDown"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd6" org.eventb.core.predicate="motor = Start"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveRight">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveRight"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd5" org.eventb.core.predicate="motor = Start"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveLeft">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveLeft"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd5" org.eventb.core.predicate="motor = Start"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="S1Up_S2Up">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="S1Up_S2Up"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="1" org.eventb.core.identifier="floor"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="6" org.eventb.core.identifier="move2"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="5" org.eventb.core.identifier="move1"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="4" org.eventb.core.identifier="shaft"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="3" org.eventb.core.identifier="cabin"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="2" org.eventb.core.identifier="position"/>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="S1Down_S2Down">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="S1Down_S2Down"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="8" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="S1Up_S2Down">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="S1Up_S2Down"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="9" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="S1Down_S2Up">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="S1Down_S2Up"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=":" org.eventb.core.identifier="motor"/>
+    <org.eventb.core.invariant name=";" org.eventb.core.label="inv1" org.eventb.core.predicate="motor ∈ MotorStatus"/>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="=" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MotorStart">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="motor = Stop"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Start" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MotorStop">
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="motor = Start "/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
 </org.eventb.core.machineFile>

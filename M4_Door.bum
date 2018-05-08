@@ -71,13 +71,16 @@
     <org.eventb.core.event name="A" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DoorHalfToOpen">
         <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="status = Half"/>
         <org.eventb.core.action name="(" org.eventb.core.assignment="status ≔ Open" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="motor = Stop"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="B" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DoorOpenToHalf">
         <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="status = Open"/>
         <org.eventb.core.action name="(" org.eventb.core.assignment="status ≔ Half" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="motor = Stop"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="C" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DoorHalfToClosed">
         <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="status = Half"/>
         <org.eventb.core.action name="(" org.eventb.core.assignment="status ≔ Closed" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="motor = Stop"/>
     </org.eventb.core.event>
 </org.eventb.core.machineFile>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="29">
+<org.eventb.core.poFile org.eventb.core.poStamp="36">
     <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="4">
         <org.eventb.core.poIdentifier name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
         <org.eventb.core.poIdentifier name="Closed" org.eventb.core.type="DoorStatus"/>
@@ -132,31 +132,31 @@
         <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="motor=Start" org.eventb.core.source="/NewProject/M3_Motor.bum|org.eventb.core.machineFile#M3_Motor|org.eventb.core.event#\/|org.eventb.core.guard#("/>
         <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="status=Closed" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.event#6|org.eventb.core.guard#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFlooz" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="29">
+    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFlooz" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="35">
         <org.eventb.core.poIdentifier name="move1'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="status'" org.eventb.core.type="DoorStatus"/>
         <org.eventb.core.poIdentifier name="move2'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlooz" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlooz" org.eventb.core.poStamp="29"/>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloo{" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="23">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlooz" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlooz" org.eventb.core.poStamp="35"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloo{" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="35">
         <org.eventb.core.poIdentifier name="move1'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="move2'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloo{" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloo{" org.eventb.core.poStamp="23"/>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloo|" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="23">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloo{" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloo{" org.eventb.core.poStamp="35"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloo|" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="35">
         <org.eventb.core.poIdentifier name="move1'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="move2'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloo|" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloo\|" org.eventb.core.poStamp="23"/>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloo}" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="23">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloo|" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloo\|" org.eventb.core.poStamp="35"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloo}" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="35">
         <org.eventb.core.poIdentifier name="move1'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="move2'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloo}" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloo}" org.eventb.core.poStamp="23"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloo}" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloo}" org.eventb.core.poStamp="35"/>
     <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloo~" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="23">
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
@@ -167,8 +167,8 @@
     <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFlop'" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="23">
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlop'" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlop'" org.eventb.core.poStamp="23">
-        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="motor=Stop" org.eventb.core.source="/NewProject/M3_Motor.bum|org.eventb.core.machineFile#M3_Motor|org.eventb.core.event#&gt;|org.eventb.core.guard#'"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlop'" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlop'" org.eventb.core.poStamp="36">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="motor=Start" org.eventb.core.source="/NewProject/M3_Motor.bum|org.eventb.core.machineFile#M3_Motor|org.eventb.core.event#&gt;|org.eventb.core.guard#'"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFlop(" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="status'" org.eventb.core.type="DoorStatus"/>
@@ -180,20 +180,23 @@
     <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFlop)" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="status'" org.eventb.core.type="DoorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlop)" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlop)" org.eventb.core.poStamp="23">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlop)" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlop)" org.eventb.core.poStamp="30">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="status=Half" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.event#A|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="motor=Stop" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.event#A|org.eventb.core.guard#)"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFlop*" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="status'" org.eventb.core.type="DoorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlop*" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlop*" org.eventb.core.poStamp="23">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlop*" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlop*" org.eventb.core.poStamp="31">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="status=Open" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.event#B|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="motor=Stop" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.event#B|org.eventb.core.guard#)"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFlop+" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="27">
         <org.eventb.core.poIdentifier name="status'" org.eventb.core.type="DoorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlop+" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlop+" org.eventb.core.poStamp="27">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlop+" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlop+" org.eventb.core.poStamp="32">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="status=Half" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.event#C|org.eventb.core.guard#'"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="motor=Stop" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.event#C|org.eventb.core.guard#)"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/NewProject/M4_Door.bpo|org.eventb.core.poFile#M4_Door|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="23">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="status∈DoorStatus" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.invariant#@"/>
