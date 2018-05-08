@@ -513,7 +513,7 @@
 </org.eventb.core.prAnte>
 <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
 </org.eventb.core.prRule>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="1∈ℕ"/>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Shaft1=Shaft2">
 <org.eventb.core.prIdent name="Shaft" org.eventb.core.type="ℙ(Shaft)"/>
@@ -1348,7 +1348,7 @@
 </org.eventb.core.prAnte>
 <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
 </org.eventb.core.prRule>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="0∈ℕ"/>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="1∈ℕ"/>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Shaft1=Shaft2">
 <org.eventb.core.prIdent name="Shaft" org.eventb.core.type="ℙ(Shaft)"/>
@@ -1383,8 +1383,8 @@
 </org.eventb.core.prAnte>
 <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
 </org.eventb.core.prRule>
+<org.eventb.core.prPred name="p0" org.eventb.core.predicate="1∈ℕ"/>
 <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤"/>
-<org.eventb.core.prPred name="p0" org.eventb.core.predicate="2∈ℕ"/>
 <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Shaft1=Shaft2">
 <org.eventb.core.prIdent name="Shaft" org.eventb.core.type="ℙ(Shaft)"/>
 <org.eventb.core.prIdent name="Shaft1" org.eventb.core.type="Shaft"/>
