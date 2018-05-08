@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="131" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="131" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="131" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="AddCabin/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="133" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="AddCabin/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="133" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="RemoveCabin/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="137" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="RemoveCabin/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="137" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="RemoveCabin/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="137" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveUp/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="147" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveUp/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="147" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveUp/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="149" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveUp/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="149" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveUp/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="147" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveUp/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="147" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveDown/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="152" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveDown/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="152" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveDown/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="152" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveDown/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="152" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveDown/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="152" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveDown/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="152" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="AddCabin/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="AddCabin/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="RemoveCabin/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="RemoveCabin/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="RemoveCabin/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveUp/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveUp/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveUp/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveUp/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveUp/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveUp/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveDown/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveDown/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveDown/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveDown/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveDown/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveDown/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="155" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

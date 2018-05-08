@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="25">
-    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poFile org.eventb.core.poStamp="26">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="26">
         <org.eventb.core.poIdentifier name="Cabin" org.eventb.core.type="ℙ(Cabin)"/>
         <org.eventb.core.poIdentifier name="Bottom_Floor" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="Top_Floor" org.eventb.core.type="ℤ"/>
@@ -17,8 +17,9 @@
         <org.eventb.core.poIdentifier name="Start" org.eventb.core.type="MotorStatus"/>
         <org.eventb.core.poIdentifier name="Stop" org.eventb.core.type="MotorStatus"/>
         <org.eventb.core.poPredicate name="ShaftMovemenv" org.eventb.core.predicate="partition(MotorStatus,{Start},{Stop})" org.eventb.core.source="/NewProject/C3_Motor.buc|org.eventb.core.contextFile#C3_Motor|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="ShaftMovemenw" org.eventb.core.predicate="card(Cabin)=4" org.eventb.core.source="/NewProject/C1_Cabin_ProB.buc|org.eventb.core.contextFile#C1_Cabin_ProB|org.eventb.core.axiom#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="9">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="26">
         <org.eventb.core.poIdentifier name="cabin" org.eventb.core.type="ℙ(Cabin)"/>
         <org.eventb.core.poIdentifier name="currentFloor" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="floor" org.eventb.core.type="ℙ(ℤ)"/>
@@ -35,7 +36,7 @@
         <org.eventb.core.poPredicate name="currentFloox" org.eventb.core.predicate="move1∈ℕ" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.invariant#:"/>
         <org.eventb.core.poPredicate name="currentFlooy" org.eventb.core.predicate="move2∈ℕ" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.invariant#;"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloos" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="9">
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProK" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="shaft'" org.eventb.core.type="ℙ(Shaft×Cabin)"/>
         <org.eventb.core.poIdentifier name="move1'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="move2'" org.eventb.core.type="ℤ"/>
@@ -44,8 +45,8 @@
         <org.eventb.core.poIdentifier name="floor'" org.eventb.core.type="ℙ(ℤ)"/>
         <org.eventb.core.poIdentifier name="cabin'" org.eventb.core.type="ℙ(Cabin)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloos" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloos" org.eventb.core.poStamp="9"/>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloot" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="9">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProK" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProK" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProL" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="S" org.eventb.core.type="Shaft"/>
         <org.eventb.core.poIdentifier name="f" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="shaft'" org.eventb.core.type="ℙ(Shaft×Cabin)"/>
@@ -54,13 +55,13 @@
         <org.eventb.core.poIdentifier name="floor'" org.eventb.core.type="ℙ(ℤ)"/>
         <org.eventb.core.poIdentifier name="cabin'" org.eventb.core.type="ℙ(Cabin)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloot" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloot" org.eventb.core.poStamp="9">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProL" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProL" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="c∉cabin" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#*|org.eventb.core.guard#*"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="f∈Bottom_Floor ‥ Top_Floor" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#*|org.eventb.core.guard#-"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="f∉floor" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#*|org.eventb.core.guard#."/>
         <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="S∈Shaft" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#*|org.eventb.core.guard#4"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloou" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="9">
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProM" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="S" org.eventb.core.type="Shaft"/>
         <org.eventb.core.poIdentifier name="shaft'" org.eventb.core.type="ℙ(Shaft×Cabin)"/>
         <org.eventb.core.poIdentifier name="c" org.eventb.core.type="Cabin"/>
@@ -68,16 +69,16 @@
         <org.eventb.core.poIdentifier name="floor'" org.eventb.core.type="ℙ(ℤ)"/>
         <org.eventb.core.poIdentifier name="cabin'" org.eventb.core.type="ℙ(Cabin)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloou" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloou" org.eventb.core.poStamp="9">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProM" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProM" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="c∈cabin" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#+|org.eventb.core.guard#("/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="S∈Shaft" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#+|org.eventb.core.guard#\/"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloov" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="9">
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProN" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="lift_No" org.eventb.core.type="Cabin"/>
         <org.eventb.core.poIdentifier name="position'" org.eventb.core.type="ℙ(Cabin×ℤ)"/>
         <org.eventb.core.poIdentifier name="floor'" org.eventb.core.type="ℙ(ℤ)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloov" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloov" org.eventb.core.poStamp="19">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProN" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProN" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lift_No∈dom(position)" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#0|org.eventb.core.guard#("/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="position(lift_No)≠Top_Floor" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#0|org.eventb.core.guard#)"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="position(lift_No)+1∉ran(position)" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#0|org.eventb.core.guard#*"/>
@@ -85,12 +86,12 @@
         <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="(dom(shaft ▷ {lift_No})={Shaft1}∧move1=1)∨(dom(shaft ▷ {lift_No})={Shaft2}∧move2=1)" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#0|org.eventb.core.guard#\/"/>
         <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="motor=Start" org.eventb.core.source="/NewProject/M3_Motor.bum|org.eventb.core.machineFile#M3_Motor|org.eventb.core.event#,|org.eventb.core.guard#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloow" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="9">
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProO" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="lift_No" org.eventb.core.type="Cabin"/>
         <org.eventb.core.poIdentifier name="position'" org.eventb.core.type="ℙ(Cabin×ℤ)"/>
         <org.eventb.core.poIdentifier name="floor'" org.eventb.core.type="ℙ(ℤ)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloow" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloow" org.eventb.core.poStamp="19">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProO" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProO" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lift_No∈dom(position)" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#1|org.eventb.core.guard#("/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="position(lift_No)≠Bottom_Floor" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#1|org.eventb.core.guard#)"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="lift_No∈cabin" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#1|org.eventb.core.guard#-"/>
@@ -98,65 +99,65 @@
         <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="(dom(shaft ▷ {lift_No})={Shaft1}∧move1=2)∨(dom(shaft ▷ {lift_No})={Shaft2}∧move2=2)" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#1|org.eventb.core.guard#."/>
         <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="motor=Start" org.eventb.core.source="/NewProject/M3_Motor.bum|org.eventb.core.machineFile#M3_Motor|org.eventb.core.event#-|org.eventb.core.guard#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloox" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="9">
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProP" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="lift_No" org.eventb.core.type="Cabin"/>
         <org.eventb.core.poIdentifier name="shaft'" org.eventb.core.type="ℙ(Shaft×Cabin)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloox" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloox" org.eventb.core.poStamp="14">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProP" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProP" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lift_No∈dom(position)" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#6|org.eventb.core.guard#("/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lift_No∈cabin" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#6|org.eventb.core.guard#)"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="dom(shaft ▷ {lift_No})={Shaft1}" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#6|org.eventb.core.guard#,"/>
         <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="position(lift_No)=Top_Floor∨position(lift_No)=Bottom_Floor" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#6|org.eventb.core.guard#*"/>
         <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="motor=Start" org.eventb.core.source="/NewProject/M3_Motor.bum|org.eventb.core.machineFile#M3_Motor|org.eventb.core.event#.|org.eventb.core.guard#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFlooy" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="9">
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProQ" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="lift_No" org.eventb.core.type="Cabin"/>
         <org.eventb.core.poIdentifier name="shaft'" org.eventb.core.type="ℙ(Shaft×Cabin)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlooy" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlooy" org.eventb.core.poStamp="14">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProQ" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProQ" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lift_No∈dom(position)" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#7|org.eventb.core.guard#("/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lift_No∈cabin" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#7|org.eventb.core.guard#*"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="dom(shaft ▷ {lift_No})={Shaft2}" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#7|org.eventb.core.guard#,"/>
         <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="position(lift_No)=Top_Floor∨position(lift_No)=Bottom_Floor" org.eventb.core.source="/NewProject/M2_Shaft.bum|org.eventb.core.machineFile#M2_Shaft|org.eventb.core.event#7|org.eventb.core.guard#)"/>
         <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="motor=Start" org.eventb.core.source="/NewProject/M3_Motor.bum|org.eventb.core.machineFile#M3_Motor|org.eventb.core.event#\/|org.eventb.core.guard#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFlooz" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="24">
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProR" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="move1'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="move2'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlooz" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlooz" org.eventb.core.poStamp="24"/>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloo{" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="24">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProR" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProR" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProS" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="move1'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="move2'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloo{" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloo{" org.eventb.core.poStamp="24"/>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloo|" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="24">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProS" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProS" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProT" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="move1'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="move2'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloo|" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloo\|" org.eventb.core.poStamp="24"/>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloo}" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="24">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProT" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProT" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProU" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="move1'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="move2'" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloo}" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloo}" org.eventb.core.poStamp="24"/>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFloo~" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProU" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProU" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProV" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFloo~" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFloo~" org.eventb.core.poStamp="11">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProV" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProV" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="motor=Stop" org.eventb.core.source="/NewProject/M3_Motor.bum|org.eventb.core.machineFile#M3_Motor|org.eventb.core.event#=|org.eventb.core.guard#'"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentFlop'" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTIDENTC1_Cabin_ProW" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentFlop'" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTcurrentFlop'" org.eventb.core.poStamp="25">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPC1_Cabin_ProW" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#EVTIDENTC1_Cabin_ProW" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="motor=Start" org.eventb.core.source="/NewProject/M3_Motor.bum|org.eventb.core.machineFile#M3_Motor|org.eventb.core.event#&gt;|org.eventb.core.guard#'"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="9">
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/NewProject/M3_Motor.bpo|org.eventb.core.poFile#M3_Motor|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="26">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="motor∈MotorStatus" org.eventb.core.source="/NewProject/M3_Motor.bum|org.eventb.core.machineFile#M3_Motor|org.eventb.core.invariant#;"/>
     </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

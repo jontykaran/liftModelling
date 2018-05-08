@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Cabin" org.eventb.core.type="ℙ(Cabin)"/>
+        <org.eventb.core.poIdentifier name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Top_Floor" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poPredicate name="Bottom_Floos" org.eventb.core.predicate="Top_Floor∈ℕ1" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#*"/>
+        <org.eventb.core.poPredicate name="Bottom_Floot" org.eventb.core.predicate="Bottom_Floor∈ℤ" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="Bottom_Floou" org.eventb.core.predicate="Top_Floor=3" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#,"/>
+        <org.eventb.core.poPredicate name="Bottom_Floov" org.eventb.core.predicate="Bottom_Floor=0" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#-"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="axm1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Axiom" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/C1_Cabin_ProB.bpo|org.eventb.core.poFile#C1_Cabin_ProB|org.eventb.core.poPredicateSet#ABSHYP"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(Cabin)" org.eventb.core.source="/NewProject/C1_Cabin_ProB.buc|org.eventb.core.contextFile#C1_Cabin_ProB|org.eventb.core.axiom#("/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/NewProject/C1_Cabin_ProB.buc|org.eventb.core.contextFile#C1_Cabin_ProB|org.eventb.core.axiom#("/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/NewProject/C1_Cabin_ProB.bpo|org.eventb.core.poFile#C1_Cabin_ProB|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/NewProject/C1_Cabin_ProB.bpo|org.eventb.core.poFile#C1_Cabin_ProB|org.eventb.core.poPredicateSet#ABSHYP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/NewProject/C1_Cabin_ProB.bpo|org.eventb.core.poFile#C1_Cabin_ProB|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="card(Cabin)=4" org.eventb.core.source="/NewProject/C1_Cabin_ProB.buc|org.eventb.core.contextFile#C1_Cabin_ProB|org.eventb.core.axiom#("/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
