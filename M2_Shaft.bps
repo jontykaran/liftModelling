@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="inv1/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="32" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="33" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/act2/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="33" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="AddCabin/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="32" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="RemoveCabin/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="32" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveUp/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="36" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveDown/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="41" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveRight/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="44" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveRight/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="44" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveLeft/grd2/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="43" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="MoveLeft/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="43" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv1/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/act2/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveRight/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveLeft/grd2/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Up_S2Up/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="59" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Up_S2Up/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Down_S2Down/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Down_S2Down/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Up_S2Down/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Up_S2Down/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Down_S2Up/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Down_S2Up/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="58" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>
