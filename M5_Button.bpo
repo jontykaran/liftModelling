@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="54">
+<org.eventb.core.poFile org.eventb.core.poStamp="63">
     <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="11">
         <org.eventb.core.poIdentifier name="Cabin" org.eventb.core.type="ℙ(Cabin)"/>
         <org.eventb.core.poIdentifier name="Bottom_Floor" org.eventb.core.type="ℤ"/>
@@ -257,7 +257,13 @@
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="motor=Stop" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.event#&gt;|org.eventb.core.guard#'"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="status=Closed" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.event#&gt;|org.eventb.core.guard#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="UpButton/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="46">
+    <org.eventb.core.poSequent name="UpButton/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="63">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTHYPcurrentPointf*("/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lift_No∈dom(position)∧position∈Cabin ⇸ ℤ" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#E|org.eventb.core.guard#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#E|org.eventb.core.guard#,"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTHYPcurrentPointf*("/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="UpButton/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="63">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTALLHYPcurrentPointf*"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="up_button∪{Floor_No}⊆Bottom_Floor ‥ Top_Floor − 1" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.invariant#C"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#E"/>
@@ -265,15 +271,25 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poSequent#UpButton\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentPointf*" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="46">
+    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentPointf*" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="63">
         <org.eventb.core.poIdentifier name="up_button'" org.eventb.core.type="ℙ(ℤ)"/>
         <org.eventb.core.poIdentifier name="Floor_No" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="lift_No" org.eventb.core.type="Cabin"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentPointf*" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTIDENTcurrentPointf*" org.eventb.core.poStamp="46">
+    <org.eventb.core.poPredicateSet name="EVTHYPcurrentPointf*(" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTIDENTcurrentPointf*" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Floor_No∈Bottom_Floor ‥ Top_Floor − 1" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#E|org.eventb.core.guard#("/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Floor_No∉up_button" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#E|org.eventb.core.guard#*"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="DownButton/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="53">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentPointf*" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTHYPcurrentPointf*(" org.eventb.core.poStamp="63">
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="position(lift_No)≠Top_Floor" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#E|org.eventb.core.guard#,"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="DownButton/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="62">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTHYPcurrentPointf+("/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lift_No∈dom(position)∧position∈Cabin ⇸ ℤ" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#J|org.eventb.core.guard#,"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#J|org.eventb.core.guard#,"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTHYPcurrentPointf+("/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="DownButton/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="62">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTALLHYPcurrentPointf+"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="down_button∪{Floor_No}⊆Bottom_Floor+1 ‥ Top_Floor" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.invariant#D"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#J"/>
@@ -281,13 +297,17 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poSequent#DownButton\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentPointf+" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="49">
+    <org.eventb.core.poPredicateSet name="EVTIDENTcurrentPointf+" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="62">
         <org.eventb.core.poIdentifier name="Floor_No" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="lift_No" org.eventb.core.type="Cabin"/>
         <org.eventb.core.poIdentifier name="down_button'" org.eventb.core.type="ℙ(ℤ)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentPointf+" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTIDENTcurrentPointf+" org.eventb.core.poStamp="53">
+    <org.eventb.core.poPredicateSet name="EVTHYPcurrentPointf+(" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTIDENTcurrentPointf+" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Floor_No∈Bottom_Floor+1 ‥ Top_Floor" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#J|org.eventb.core.guard#("/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Floor_No∉down_button" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#J|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentPointf+" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTHYPcurrentPointf+(" org.eventb.core.poStamp="62">
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="position(lift_No)≠Bottom_Floor" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#J|org.eventb.core.guard#,"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="EVTIDENTcurrentPointf," org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="46">
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
@@ -296,7 +316,7 @@
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="motor=Stop" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#H|org.eventb.core.guard#'"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="status=Closed" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#H|org.eventb.core.guard#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="MotorStop/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="54">
+    <org.eventb.core.poSequent name="MotorStop/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="58">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTALLHYPcurrentPointf-"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="up_button ∖ {currentPointer}⊆Bottom_Floor ‥ Top_Floor − 1" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.invariant#C"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.event#="/>
@@ -305,7 +325,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poSequent#MotorStop\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="MotorStop/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="54">
+    <org.eventb.core.poSequent name="MotorStop/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="58">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTALLHYPcurrentPointf-"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="down_button ∖ {currentPointer}⊆Bottom_Floor+1 ‥ Top_Floor" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.invariant#D"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.event#="/>
@@ -314,7 +334,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poSequent#MotorStop\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="MotorStop/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="54">
+    <org.eventb.core.poSequent name="MotorStop/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="58">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTALLHYPcurrentPointf-"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="motor=Start" org.eventb.core.source="/NewProject/M3_Motor.bum|org.eventb.core.machineFile#M3_Motor|org.eventb.core.event#&gt;|org.eventb.core.guard#'"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/NewProject/M4_Door.bum|org.eventb.core.machineFile#M4_Door|org.eventb.core.event#="/>
@@ -327,8 +347,8 @@
         <org.eventb.core.poIdentifier name="down_button'" org.eventb.core.type="ℙ(ℤ)"/>
         <org.eventb.core.poIdentifier name="motor'" org.eventb.core.type="MotorStatus"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentPointf-" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTIDENTcurrentPointf-" org.eventb.core.poStamp="54">
-        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="motor=Start∨currentPointer∈up_button" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#I|org.eventb.core.guard#'"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPcurrentPointf-" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#EVTIDENTcurrentPointf-" org.eventb.core.poStamp="58">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="motor=Start∨currentPointer∈up_button∨currentPointer∈down_button" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.event#I|org.eventb.core.guard#'"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/NewProject/M5_Button.bpo|org.eventb.core.poFile#M5_Button|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="46">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="up_button⊆Bottom_Floor ‥ Top_Floor − 1" org.eventb.core.source="/NewProject/M5_Button.bum|org.eventb.core.machineFile#M5_Button|org.eventb.core.invariant#C"/>
