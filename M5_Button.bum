@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.units.mchBase;ch.ethz.eventb.qualprob.qpConfig" version="5">
+<<<<<<< HEAD
 <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
 <org.eventb.core.action name="'" org.eventb.core.assignment="floor ≔ ∅" org.eventb.core.label="act1"/>
 <org.eventb.core.action name="(" org.eventb.core.assignment="shaft ≔ ∅" org.eventb.core.label="act2"/>
@@ -111,4 +112,110 @@
 <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="f ∈ FloorButton(lift_No)"/>
 <org.eventb.core.action name="+" org.eventb.core.assignment="" org.eventb.core.label="act1"/>
 </org.eventb.core.event>
+=======
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="floor ≔ ∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="shaft ≔ ∅" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="cabin ≔ ∅" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="position ≔ ∅" org.eventb.core.label="act8"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="move1 ≔ 1" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="move2 ≔ 1" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act6"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="status ≔ Open" org.eventb.core.label="act7"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="up_button ≔ ∅" org.eventb.core.label="act9"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="down_button ≔ ∅" org.eventb.core.label="act10"/>
+        <org.eventb.core.action name="1" org.eventb.core.assignment="currentPointer ≔ Bottom_Floor" org.eventb.core.label="act11"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="C4_Door"/>
+    <org.eventb.core.refinesMachine name=")" org.eventb.core.target="M4_Door"/>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="+" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="AddCabin">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="AddCabin"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="*" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="RemoveCabin">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="RemoveCabin"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="," org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveUp">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveUp"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="currentPointer ≔ position(lift_No)+1" org.eventb.core.label="act4"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd8" org.eventb.core.predicate="currentPointer ∉ up_button"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="-" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveDown">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveDown"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="currentPointer ≔ position(lift_No)−1 " org.eventb.core.label="act3"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd8" org.eventb.core.predicate="currentPointer ∉ down_button"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="." org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveLeft">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveLeft"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="/" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="MoveRight">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MoveRight"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="0" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="S1Up_S2Up">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="S1Up_S2Up"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="1" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="S1Down_S2Down">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="S1Down_S2Down"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="2" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="S1Up_S2Down">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="S1Up_S2Down"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="3" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="S1Down_S2Up">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="S1Down_S2Up"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DoorHalfToOpen">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DoorHalfToOpen"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="5" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DoorHalfToClosed">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DoorHalfToClosed"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="6" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DoorOpenToHalf">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DoorOpenToHalf"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="DoorClosedToHalf">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="DoorClosedToHalf"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="8" org.eventb.core.identifier="floor"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="9" org.eventb.core.identifier="shaft"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=":" org.eventb.core.identifier="cabin"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name=";" org.eventb.core.identifier="move1"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="&gt;" org.eventb.core.identifier="position"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="=" org.eventb.core.identifier="move2"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="?" org.eventb.core.identifier="motor"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="@" org.eventb.core.identifier="status"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="A" org.eventb.core.identifier="up_button"/>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="B" org.eventb.core.identifier="down_button"/>
+    <org.eventb.core.invariant name="C" org.eventb.core.label="inv1" org.eventb.core.predicate="up_button ⊆ Bottom_Floor‥Top_Floor−1"/>
+    <org.eventb.core.invariant name="D" org.eventb.core.label="inv2" org.eventb.core.predicate="down_button ⊆ Bottom_Floor+1‥Top_Floor"/>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="E" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="UpButton">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="Floor_No"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="Floor_No ∈ Bottom_Floor‥(Top_Floor−1)"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="up_button ≔ up_button ∪ {Floor_No}" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="Floor_No ∉ up_button"/>
+        <org.eventb.core.parameter name="+" org.eventb.core.identifier="lift_No"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="position(lift_No) ≠ Top_Floor"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable de.prob.units.inferredUnitPragmaAttribute="" de.prob.units.unitPragmaAttribute="" name="F" org.eventb.core.identifier="currentPointer"/>
+    <org.eventb.core.invariant name="G" org.eventb.core.label="inv3" org.eventb.core.predicate="currentPointer ∈ Bottom_Floor‥Top_Floor"/>
+    <org.eventb.core.event name="J" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DownButton">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="Floor_No"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="Floor_No ∈ (Bottom_Floor+1)‥Top_Floor"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="Floor_No ∉ down_button"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="down_button ≔ down_button ∪ {Floor_No}" org.eventb.core.label="act1"/>
+        <org.eventb.core.parameter name="+" org.eventb.core.identifier="lift_No"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="position(lift_No) ≠ Bottom_Floor"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="H" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MotorStart">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MotorStart"/>
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="motor = Stop"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Start" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd2" org.eventb.core.predicate="status = Closed"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event ch.ethz.eventb.qualprob.probabilistic="false" name="I" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="MotorStop">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="MotorStop"/>
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="(motor = Start) ∨ (currentPointer ∈ up_button) ∨ (currentPointer ∈ down_button) "/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="motor ≔ Stop" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="up_button ≔ (up_button ∖ {currentPointer}) " org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="down_button ≔ (down_button ∖ {currentPointer})" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+>>>>>>> 36d2276f980f55b0647567c8e12b57ff1aedb983
 </org.eventb.core.machineFile>
