@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-    <org.eventb.core.psStatus name="inv1/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/act2/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MoveRight/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MoveLeft/grd2/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="S1Up_S2Up/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="S1Up_S2Up/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="S1Down_S2Down/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="S1Down_S2Down/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="S1Up_S2Down/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="S1Up_S2Down/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="S1Down_S2Up/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="S1Down_S2Up/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="64" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv1/THM" org.eventb.core.confidence="0" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/act2/SIM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveRight/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="MoveLeft/grd2/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Up_S2Up/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Up_S2Up/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Down_S2Down/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Down_S2Down/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Up_S2Down/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Up_S2Down/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Down_S2Up/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="S1Down_S2Up/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>
