@@ -7367,18 +7367,23 @@
                                     <org.eventb.core.prAnte name="'">
                                         <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p12" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13,p14"/>
                                         <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p13,p14"/>
-                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
-                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p0">
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
                                                 <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
-                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
-                                                    <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p0">
                                                         <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
-                                                        <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
                                                             <org.eventb.core.prAnte name="'">
-                                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p18"/>
-                                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p19"/>
-                                                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p20"/>
-                                                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p21"/>
+                                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p17"/>
+                                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                                                    <org.eventb.core.prAnte name="'">
+                                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p18"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p19"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p20"/>
+                                                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p21"/>
+                                                                    </org.eventb.core.prAnte>
+                                                                </org.eventb.core.prRule>
                                                             </org.eventb.core.prAnte>
                                                         </org.eventb.core.prRule>
                                                     </org.eventb.core.prAnte>
@@ -7420,6 +7425,11 @@
         <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Start=Stop">
             <org.eventb.core.prIdent name="Stop" org.eventb.core.type="MotorStatus"/>
         </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬⊥∨currentPointer∈up_button∨currentPointer∈down_button">
+            <org.eventb.core.prIdent name="currentPointer" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="down_button" org.eventb.core.type="ℙ(ℤ)"/>
+            <org.eventb.core.prIdent name="up_button" org.eventb.core.type="ℙ(ℤ)"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Open=Closed">
             <org.eventb.core.prIdent name="Closed" org.eventb.core.type="DoorStatus"/>
             <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
@@ -7431,11 +7441,6 @@
             <org.eventb.core.prIdent name="Half" org.eventb.core.type="DoorStatus"/>
             <org.eventb.core.prIdent name="Open" org.eventb.core.type="DoorStatus"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="motor=Start∨currentPointer∈up_button∨currentPointer∈down_button">
-            <org.eventb.core.prIdent name="currentPointer" org.eventb.core.type="ℤ"/>
-            <org.eventb.core.prIdent name="down_button" org.eventb.core.type="ℙ(ℤ)"/>
-            <org.eventb.core.prIdent name="up_button" org.eventb.core.type="ℙ(ℤ)"/>
-        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Open=Half">
             <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
             <org.eventb.core.prIdent name="Half" org.eventb.core.type="DoorStatus"/>
@@ -7446,13 +7451,13 @@
             <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
             <org.eventb.core.prIdent name="Half" org.eventb.core.type="DoorStatus"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MotorStatus={Start,Stop}">
-            <org.eventb.core.prIdent name="Stop" org.eventb.core.type="MotorStatus"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="currentPointer∈up_button∨currentPointer∈down_button">
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬motor=Start∨currentPointer∈up_button∨currentPointer∈down_button">
             <org.eventb.core.prIdent name="currentPointer" org.eventb.core.type="ℤ"/>
             <org.eventb.core.prIdent name="down_button" org.eventb.core.type="ℙ(ℤ)"/>
             <org.eventb.core.prIdent name="up_button" org.eventb.core.type="ℙ(ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="MotorStatus={Start,Stop}">
+            <org.eventb.core.prIdent name="Stop" org.eventb.core.type="MotorStatus"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p19" org.eventb.core.predicate="cabin⊆Cabin">
             <org.eventb.core.prIdent name="Cabin" org.eventb.core.type="ℙ(Cabin)"/>
@@ -7465,17 +7470,17 @@
             <org.eventb.core.prIdent name="Half" org.eventb.core.type="DoorStatus"/>
             <org.eventb.core.prIdent name="Open" org.eventb.core.type="DoorStatus"/>
         </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="motor≠Start∨currentPointer∈up_button∨currentPointer∈down_button">
+            <org.eventb.core.prIdent name="currentPointer" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="down_button" org.eventb.core.type="ℙ(ℤ)"/>
+            <org.eventb.core.prIdent name="up_button" org.eventb.core.type="ℙ(ℤ)"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p21" org.eventb.core.predicate="status∈DoorStatus">
             <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
             <org.eventb.core.prIdent name="status" org.eventb.core.type="DoorStatus"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p18" org.eventb.core.predicate="Bottom_Floor∈ℤ">
             <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="⊥∨currentPointer∈up_button∨currentPointer∈down_button">
-            <org.eventb.core.prIdent name="currentPointer" org.eventb.core.type="ℤ"/>
-            <org.eventb.core.prIdent name="down_button" org.eventb.core.type="ℙ(ℤ)"/>
-            <org.eventb.core.prIdent name="up_button" org.eventb.core.type="ℙ(ℤ)"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(Shaft,{Shaft1},{Shaft2})">
             <org.eventb.core.prIdent name="Shaft" org.eventb.core.type="ℙ(Shaft)"/>
@@ -7494,8 +7499,8 @@
             <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
-        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="MotorStop/act1/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
@@ -8011,12 +8016,17 @@
                                     <org.eventb.core.prAnte name="'">
                                         <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13"/>
                                         <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13"/>
-                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
                                             <org.eventb.core.prAnte name="'">
-                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
-                                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p15"/>
-                                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p16"/>
-                                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p17"/>
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p14" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p15"/>
+                                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                                    <org.eventb.core.prAnte name="'">
+                                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p16"/>
+                                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p17"/>
+                                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p18"/>
+                                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p19"/>
+                                                    </org.eventb.core.prAnte>
+                                                </org.eventb.core.prRule>
                                             </org.eventb.core.prAnte>
                                         </org.eventb.core.prRule>
                                     </org.eventb.core.prAnte>
@@ -8077,12 +8087,20 @@
             <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
             <org.eventb.core.prIdent name="Half" org.eventb.core.type="DoorStatus"/>
         </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="¬motor=Start∨currentPointer∈up_button∨currentPointer∈down_button">
+            <org.eventb.core.prIdent name="MotorStatus" org.eventb.core.type="ℙ(MotorStatus)"/>
+            <org.eventb.core.prIdent name="Start" org.eventb.core.type="MotorStatus"/>
+            <org.eventb.core.prIdent name="currentPointer" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="down_button" org.eventb.core.type="ℙ(ℤ)"/>
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="MotorStatus"/>
+            <org.eventb.core.prIdent name="up_button" org.eventb.core.type="ℙ(ℤ)"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p4" org.eventb.core.predicate="MotorStatus={Start,Stop}">
             <org.eventb.core.prIdent name="MotorStatus" org.eventb.core.type="ℙ(MotorStatus)"/>
             <org.eventb.core.prIdent name="Start" org.eventb.core.type="MotorStatus"/>
             <org.eventb.core.prIdent name="Stop" org.eventb.core.type="MotorStatus"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="cabin⊆Cabin">
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="cabin⊆Cabin">
             <org.eventb.core.prIdent name="Cabin" org.eventb.core.type="ℙ(Cabin)"/>
             <org.eventb.core.prIdent name="cabin" org.eventb.core.type="ℙ(Cabin)"/>
         </org.eventb.core.prPred>
@@ -8092,11 +8110,19 @@
             <org.eventb.core.prIdent name="Half" org.eventb.core.type="DoorStatus"/>
             <org.eventb.core.prIdent name="Open" org.eventb.core.type="DoorStatus"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="status∈DoorStatus">
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="motor≠Start∨currentPointer∈up_button∨currentPointer∈down_button">
+            <org.eventb.core.prIdent name="MotorStatus" org.eventb.core.type="ℙ(MotorStatus)"/>
+            <org.eventb.core.prIdent name="Start" org.eventb.core.type="MotorStatus"/>
+            <org.eventb.core.prIdent name="currentPointer" org.eventb.core.type="ℤ"/>
+            <org.eventb.core.prIdent name="down_button" org.eventb.core.type="ℙ(ℤ)"/>
+            <org.eventb.core.prIdent name="motor" org.eventb.core.type="MotorStatus"/>
+            <org.eventb.core.prIdent name="up_button" org.eventb.core.type="ℙ(ℤ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="status∈DoorStatus">
             <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
             <org.eventb.core.prIdent name="status" org.eventb.core.type="DoorStatus"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Bottom_Floor∈ℤ">
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="Bottom_Floor∈ℤ">
             <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Shaft,{Shaft1},{Shaft2})">
@@ -8104,7 +8130,7 @@
             <org.eventb.core.prIdent name="Shaft1" org.eventb.core.type="Shaft"/>
             <org.eventb.core.prIdent name="Shaft2" org.eventb.core.type="Shaft"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="motor∈MotorStatus">
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="motor∈MotorStatus">
             <org.eventb.core.prIdent name="MotorStatus" org.eventb.core.type="ℙ(MotorStatus)"/>
             <org.eventb.core.prIdent name="motor" org.eventb.core.type="MotorStatus"/>
         </org.eventb.core.prPred>
@@ -8118,7 +8144,8 @@
             <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
             <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
         <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="DownButton/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="Cabin">
