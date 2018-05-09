@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-    <org.eventb.core.psStatus name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="46" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="25" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MoveUp/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="46" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MoveUp/act4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="46" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MoveDown/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="51" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MoveDown/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="50" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="UpButton/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="63" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="UpButton/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="63" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DownButton/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="62" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DownButton/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="62" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorStop/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="65" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorStop/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="MotorStop/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="65" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="75" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="75" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="75" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveUp/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="74" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveUp/act4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="74" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveDown/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="74" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MoveDown/act3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="74" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="UpButton/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="74" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="UpButton/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="74" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DownButton/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="74" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DownButton/inv2/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="74" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="FloorButton/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="76" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="FloorButton/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="76" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorStop/inv1/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="74" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorStop/inv2/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="74" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="MotorStop/grd1/GRD" org.eventb.core.confidence="0" org.eventb.core.poStamp="74" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>
