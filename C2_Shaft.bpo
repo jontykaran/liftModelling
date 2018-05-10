@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="10">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="10">
+<org.eventb.core.poFile org.eventb.core.poStamp="13">
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="13">
 <org.eventb.core.poIdentifier name="Cabin" org.eventb.core.type="ℙ(Cabin)"/>
 <org.eventb.core.poIdentifier name="Bottom_Floor" org.eventb.core.type="ℤ"/>
 <org.eventb.core.poIdentifier name="Top_Floor" org.eventb.core.type="ℤ"/>
@@ -13,7 +13,7 @@
 <org.eventb.core.poIdentifier name="Shaft1" org.eventb.core.type="Shaft"/>
 <org.eventb.core.poIdentifier name="Shaft2" org.eventb.core.type="Shaft"/>
 </org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/NewProject/C2_Shaft.bpo|org.eventb.core.poFile#C2_Shaft|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/NewProject/C2_Shaft.bpo|org.eventb.core.poFile#C2_Shaft|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="13">
 <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(Shaft,{Shaft1},{Shaft2})" org.eventb.core.source="/NewProject/C2_Shaft.buc|org.eventb.core.contextFile#C2_Shaft|org.eventb.core.axiom#*"/>
 </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>
