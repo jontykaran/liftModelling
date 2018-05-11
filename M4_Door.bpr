@@ -650,22 +650,29 @@
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="INITIALISATION/act7/SIM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
         <org.eventb.core.lang name="L"/>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DoorStatus,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Shaft,{Shaft1},{Shaft2}))" org.eventb.core.prHyps="">
             <org.eventb.core.prAnte name="'">
-                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
-                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
-                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Shaft,{Shaft1},{Shaft2}))" org.eventb.core.prHyps="">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2"/>
+                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(MotorStatus,{On},{Off}))" org.eventb.core.prHyps="">
                     <org.eventb.core.prAnte name="'">
-                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7"/>
-                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7"/>
-                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(MotorStatus,{Start},{Stop}))" org.eventb.core.prHyps="">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4,p5"/>
+                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p4,p5"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(DoorStatus,{Open},{Half},{Closed}))" org.eventb.core.prHyps="">
                             <org.eventb.core.prAnte name="'">
-                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10"/>
-                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p9,p10"/>
-                                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+                                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+                                <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(Direction,{Up},{Down}))" org.eventb.core.prHyps="">
                                     <org.eventb.core.prAnte name="'">
-                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+                                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13"/>
+                                        <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p12,p13"/>
+                                        <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p14"/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
                                     </org.eventb.core.prAnte>
+                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
                                 </org.eventb.core.prRule>
                             </org.eventb.core.prAnte>
                             <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
@@ -676,68 +683,83 @@
             </org.eventb.core.prAnte>
             <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
         </org.eventb.core.prRule>
-        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Half=Closed">
-            <org.eventb.core.prIdent name="Closed" org.eventb.core.type="DoorStatus"/>
-            <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
-            <org.eventb.core.prIdent name="Half" org.eventb.core.type="DoorStatus"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="partition(Direction,{Up},{Down})">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="partition(MotorStatus,{Start},{Stop})">
-            <org.eventb.core.prIdent name="MotorStatus" org.eventb.core.type="ℙ(MotorStatus)"/>
-            <org.eventb.core.prIdent name="Start" org.eventb.core.type="MotorStatus"/>
-            <org.eventb.core.prIdent name="Stop" org.eventb.core.type="MotorStatus"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="¬Up=Down">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="MotorStatus={Start,Stop}">
-            <org.eventb.core.prIdent name="MotorStatus" org.eventb.core.type="ℙ(MotorStatus)"/>
-            <org.eventb.core.prIdent name="Start" org.eventb.core.type="MotorStatus"/>
-            <org.eventb.core.prIdent name="Stop" org.eventb.core.type="MotorStatus"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Shaft1=Shaft2">
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Shaft1=Shaft2">
             <org.eventb.core.prIdent name="Shaft" org.eventb.core.type="ℙ(Shaft)"/>
             <org.eventb.core.prIdent name="Shaft1" org.eventb.core.type="Shaft"/>
             <org.eventb.core.prIdent name="Shaft2" org.eventb.core.type="Shaft"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Start=Stop">
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Open=Closed">
+            <org.eventb.core.prIdent name="Closed" org.eventb.core.type="DoorStatus"/>
+            <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
+            <org.eventb.core.prIdent name="Open" org.eventb.core.type="DoorStatus"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(MotorStatus,{On},{Off})">
             <org.eventb.core.prIdent name="MotorStatus" org.eventb.core.type="ℙ(MotorStatus)"/>
-            <org.eventb.core.prIdent name="Start" org.eventb.core.type="MotorStatus"/>
-            <org.eventb.core.prIdent name="Stop" org.eventb.core.type="MotorStatus"/>
+            <org.eventb.core.prIdent name="Off" org.eventb.core.type="MotorStatus"/>
+            <org.eventb.core.prIdent name="On" org.eventb.core.type="MotorStatus"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="DoorStatus={Open,Half,Closed}">
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="partition(DoorStatus,{Open},{Half},{Closed})">
             <org.eventb.core.prIdent name="Closed" org.eventb.core.type="DoorStatus"/>
             <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
             <org.eventb.core.prIdent name="Half" org.eventb.core.type="DoorStatus"/>
             <org.eventb.core.prIdent name="Open" org.eventb.core.type="DoorStatus"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Open=Closed">
-            <org.eventb.core.prIdent name="Closed" org.eventb.core.type="DoorStatus"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Open=Half">
             <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="DoorStatus"/>
             <org.eventb.core.prIdent name="Open" org.eventb.core.type="DoorStatus"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(DoorStatus,{Open},{Half},{Closed})">
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬On=Off">
+            <org.eventb.core.prIdent name="MotorStatus" org.eventb.core.type="ℙ(MotorStatus)"/>
+            <org.eventb.core.prIdent name="Off" org.eventb.core.type="MotorStatus"/>
+            <org.eventb.core.prIdent name="On" org.eventb.core.type="MotorStatus"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Half=Closed">
+            <org.eventb.core.prIdent name="Closed" org.eventb.core.type="DoorStatus"/>
+            <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
+            <org.eventb.core.prIdent name="Half" org.eventb.core.type="DoorStatus"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="MotorStatus={On,Off}">
+            <org.eventb.core.prIdent name="MotorStatus" org.eventb.core.type="ℙ(MotorStatus)"/>
+            <org.eventb.core.prIdent name="Off" org.eventb.core.type="MotorStatus"/>
+            <org.eventb.core.prIdent name="On" org.eventb.core.type="MotorStatus"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="DoorStatus={Open,Half,Closed}">
             <org.eventb.core.prIdent name="Closed" org.eventb.core.type="DoorStatus"/>
             <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
             <org.eventb.core.prIdent name="Half" org.eventb.core.type="DoorStatus"/>
             <org.eventb.core.prIdent name="Open" org.eventb.core.type="DoorStatus"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="Bottom_Floor∈ℤ">
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="Bottom_Floor∈ℤ">
             <org.eventb.core.prIdent name="Bottom_Floor" org.eventb.core.type="ℤ"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Open=Half">
-            <org.eventb.core.prIdent name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
-            <org.eventb.core.prIdent name="Half" org.eventb.core.type="DoorStatus"/>
-            <org.eventb.core.prIdent name="Open" org.eventb.core.type="DoorStatus"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="partition(Shaft,{Shaft1},{Shaft2})">
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(Shaft,{Shaft1},{Shaft2})">
             <org.eventb.core.prIdent name="Shaft" org.eventb.core.type="ℙ(Shaft)"/>
             <org.eventb.core.prIdent name="Shaft1" org.eventb.core.type="Shaft"/>
             <org.eventb.core.prIdent name="Shaft2" org.eventb.core.type="Shaft"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="Shaft={Shaft1,Shaft2}">
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="Shaft={Shaft1,Shaft2}">
             <org.eventb.core.prIdent name="Shaft" org.eventb.core.type="ℙ(Shaft)"/>
             <org.eventb.core.prIdent name="Shaft1" org.eventb.core.type="Shaft"/>
             <org.eventb.core.prIdent name="Shaft2" org.eventb.core.type="Shaft"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="Direction={Up,Down}">
+            <org.eventb.core.prIdent name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+            <org.eventb.core.prIdent name="Down" org.eventb.core.type="Direction"/>
+            <org.eventb.core.prIdent name="Up" org.eventb.core.type="Direction"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="DoorHalfToOpen/grd1/THM" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
         <org.eventb.core.lang name="L"/>

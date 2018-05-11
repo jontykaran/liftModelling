@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="8">
-<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="8">
-<org.eventb.core.poIdentifier name="Cabin" org.eventb.core.type="ℙ(Cabin)"/>
-<org.eventb.core.poIdentifier name="Bottom_Floor" org.eventb.core.type="ℤ"/>
-<org.eventb.core.poIdentifier name="Top_Floor" org.eventb.core.type="ℤ"/>
-<org.eventb.core.poPredicate name="Bottom_Floos" org.eventb.core.predicate="Top_Floor∈ℕ1" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#*"/>
-<org.eventb.core.poPredicate name="Bottom_Floot" org.eventb.core.predicate="Bottom_Floor∈ℤ" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#+"/>
-<org.eventb.core.poPredicate name="Bottom_Floou" org.eventb.core.predicate="Top_Floor=3" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#,"/>
-<org.eventb.core.poPredicate name="Bottom_Floov" org.eventb.core.predicate="Bottom_Floor=0" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#-"/>
-<org.eventb.core.poIdentifier name="Shaft" org.eventb.core.type="ℙ(Shaft)"/>
-<org.eventb.core.poIdentifier name="ShaftMovement" org.eventb.core.type="ℙ(ShaftMovement)"/>
-<org.eventb.core.poIdentifier name="Shaft1" org.eventb.core.type="Shaft"/>
-<org.eventb.core.poIdentifier name="Shaft2" org.eventb.core.type="Shaft"/>
-<org.eventb.core.poPredicate name="ShaftMovemenu" org.eventb.core.predicate="partition(Shaft,{Shaft1},{Shaft2})" org.eventb.core.source="/NewProject/C2_Shaft.buc|org.eventb.core.contextFile#C2_Shaft|org.eventb.core.axiom#*"/>
-<org.eventb.core.poIdentifier name="MotorStatus" org.eventb.core.type="ℙ(MotorStatus)"/>
-<org.eventb.core.poIdentifier name="Start" org.eventb.core.type="MotorStatus"/>
-<org.eventb.core.poIdentifier name="Stop" org.eventb.core.type="MotorStatus"/>
-<org.eventb.core.poPredicate name="ShaftMovemenv" org.eventb.core.predicate="partition(MotorStatus,{Start},{Stop})" org.eventb.core.source="/NewProject/C3_Motor.buc|org.eventb.core.contextFile#C3_Motor|org.eventb.core.axiom#+"/>
-<org.eventb.core.poIdentifier name="Direction" org.eventb.core.type="ℙ(Direction)"/>
-<org.eventb.core.poIdentifier name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
-<org.eventb.core.poIdentifier name="Closed" org.eventb.core.type="DoorStatus"/>
-<org.eventb.core.poIdentifier name="Down" org.eventb.core.type="Direction"/>
-<org.eventb.core.poIdentifier name="Half" org.eventb.core.type="DoorStatus"/>
-<org.eventb.core.poIdentifier name="Open" org.eventb.core.type="DoorStatus"/>
-<org.eventb.core.poIdentifier name="Up" org.eventb.core.type="Direction"/>
-</org.eventb.core.poPredicateSet>
-<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/NewProject/C4_Door.bpo|org.eventb.core.poFile#C4_Door|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="8">
-<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(DoorStatus,{Open},{Half},{Closed})" org.eventb.core.source="/NewProject/C4_Door.buc|org.eventb.core.contextFile#C4_Door|org.eventb.core.axiom#,"/>
-<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="partition(Direction,{Up},{Down})" org.eventb.core.source="/NewProject/C4_Door.buc|org.eventb.core.contextFile#C4_Door|org.eventb.core.axiom#1"/>
-</org.eventb.core.poPredicateSet>
+<org.eventb.core.poFile org.eventb.core.poStamp="10">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="10">
+        <org.eventb.core.poIdentifier name="Cabin" org.eventb.core.type="ℙ(Cabin)"/>
+        <org.eventb.core.poIdentifier name="Bottom_Floor" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Top_Floor" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poPredicate name="Bottom_Floos" org.eventb.core.predicate="Top_Floor∈ℕ1" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#*"/>
+        <org.eventb.core.poPredicate name="Bottom_Floot" org.eventb.core.predicate="Bottom_Floor∈ℤ" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="Bottom_Floou" org.eventb.core.predicate="Top_Floor=3" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#,"/>
+        <org.eventb.core.poPredicate name="Bottom_Floov" org.eventb.core.predicate="Bottom_Floor=0" org.eventb.core.source="/NewProject/C1_Cabin.buc|org.eventb.core.contextFile#C1_Cabin|org.eventb.core.axiom#-"/>
+        <org.eventb.core.poIdentifier name="Shaft" org.eventb.core.type="ℙ(Shaft)"/>
+        <org.eventb.core.poIdentifier name="ShaftMovement" org.eventb.core.type="ℙ(ShaftMovement)"/>
+        <org.eventb.core.poIdentifier name="Shaft1" org.eventb.core.type="Shaft"/>
+        <org.eventb.core.poIdentifier name="Shaft2" org.eventb.core.type="Shaft"/>
+        <org.eventb.core.poPredicate name="ShaftMovemenu" org.eventb.core.predicate="partition(Shaft,{Shaft1},{Shaft2})" org.eventb.core.source="/NewProject/C2_Shaft.buc|org.eventb.core.contextFile#C2_Shaft|org.eventb.core.axiom#*"/>
+        <org.eventb.core.poIdentifier name="MotorStatus" org.eventb.core.type="ℙ(MotorStatus)"/>
+        <org.eventb.core.poIdentifier name="Off" org.eventb.core.type="MotorStatus"/>
+        <org.eventb.core.poIdentifier name="On" org.eventb.core.type="MotorStatus"/>
+        <org.eventb.core.poPredicate name="ShaftMovemenv" org.eventb.core.predicate="partition(MotorStatus,{On},{Off})" org.eventb.core.source="/NewProject/C3_Motor.buc|org.eventb.core.contextFile#C3_Motor|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poIdentifier name="Direction" org.eventb.core.type="ℙ(Direction)"/>
+        <org.eventb.core.poIdentifier name="DoorStatus" org.eventb.core.type="ℙ(DoorStatus)"/>
+        <org.eventb.core.poIdentifier name="Closed" org.eventb.core.type="DoorStatus"/>
+        <org.eventb.core.poIdentifier name="Down" org.eventb.core.type="Direction"/>
+        <org.eventb.core.poIdentifier name="Half" org.eventb.core.type="DoorStatus"/>
+        <org.eventb.core.poIdentifier name="Open" org.eventb.core.type="DoorStatus"/>
+        <org.eventb.core.poIdentifier name="Up" org.eventb.core.type="Direction"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/NewProject/C4_Door.bpo|org.eventb.core.poFile#C4_Door|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="10">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(DoorStatus,{Open},{Half},{Closed})" org.eventb.core.source="/NewProject/C4_Door.buc|org.eventb.core.contextFile#C4_Door|org.eventb.core.axiom#,"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="partition(Direction,{Up},{Down})" org.eventb.core.source="/NewProject/C4_Door.buc|org.eventb.core.contextFile#C4_Door|org.eventb.core.axiom#1"/>
+    </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>
